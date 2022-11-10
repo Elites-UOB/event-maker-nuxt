@@ -2,5 +2,4 @@
     <div>
         home
     </div>
-
 </template>
