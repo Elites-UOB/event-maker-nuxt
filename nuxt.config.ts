@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   modules: [
     '@unocss/nuxt',
+    '@vuestic/nuxt',
   ],
   unocss: {
     // presets
@@ -13,4 +14,11 @@ export default defineNuxtConfig({
     shortcuts: [],
     rules: [],
   },
+  vuestic: {
+    // config: {
+    //   // ...
+    // },
+
+    css: ['typography', 'reset','grid'],
+  }
 })

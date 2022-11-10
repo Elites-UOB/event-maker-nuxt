@@ -415,7 +415,7 @@
   resolved "https://registry.yarnpkg.com/@nuxt/devalue/-/devalue-2.0.0.tgz#c7bd7e9a516514e612d5d2e511ffc399e0eac322"
   integrity sha512-YBI/6o2EBz02tdEJRBK8xkt3zvOFOWlLBf7WKYGBsSYSRtjjgrqPe2skp6VLLmKx5WbHHDNcW+6oACaurxGzeA==
 
-"@nuxt/kit@3.0.0-rc.13", "@nuxt/kit@^3.0.0-rc.11":
+"@nuxt/kit@3.0.0-rc.13", "@nuxt/kit@^3.0.0-rc.11", "@nuxt/kit@^3.0.0-rc.9":
   version "3.0.0-rc.13"
   resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.0.0-rc.13.tgz#e043f099d713152a4197b8d79cfbe2a500b6aa5e"
   integrity sha512-FYEnMRm4LvIUxygmBX/p5kykzSeBleUqCOfxervQFONkz5PVVYXEp1DDBINGR3xk01yuPElENuf+l59iEQ4q7g==
@@ -610,6 +610,11 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.0.tgz#5fb2e536c1ae9bf35366eed879e827fa59ca41c2"
   integrity sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==
+
+"@types/lodash@^4.14.161":
+  version "4.14.188"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.188.tgz#e4990c4c81f7c9b00c5ff8eae389c10f27980da5"
+  integrity sha512-zmEmF5OIM3rb7SbLCFYoQhO4dGt2FRM9AMkxvA3LaADOF1n8in/zGJlWji9fmafLoNyz+FoL6FE0SLtGIArD7w==
 
 "@types/node@*":
   version "18.11.9"
@@ -962,6 +967,16 @@
   version "3.2.44"
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.2.44.tgz#d180eae83de86a48a3a0b6aaded546683443ca57"
   integrity sha512-mGZ44bnn0zpZ36nXtxbrBPno43yr96wjQE1dBEKS1Sieugt27HS4OGZVBRIgsdGzosB7vqZAvu0ttu1FDVdolA==
+
+"@vuestic/nuxt@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@vuestic/nuxt/-/nuxt-1.0.6.tgz#d65f01f54de75a76445b1a33129c614efa26e855"
+  integrity sha512-AGzHTVGsiqQZY8VGFeKyCfK577Pv+2IzHfptmg+YgtlvabFHUJu2aVgD/522pumITsUmFmCSdIcXszrfthisvQ==
+  dependencies:
+    "@nuxt/kit" "^3.0.0-rc.9"
+    nuxt "^3.0.0-rc.9"
+    pathe "^0.3.5"
+    vuestic-ui "^1.4.10"
 
 "@vueuse/head@~1.0.0-rc.14":
   version "1.0.0-rc.14"
@@ -1340,6 +1355,11 @@ ci-info@^3.5.0:
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-3.5.0.tgz#bfac2a29263de4c829d806b1ab478e35091e171f"
   integrity sha512-yH4RezKOGlOhxkmhbeNuC4eYZKAUsEaGtBuBzDDP1eFUKiccDWzBABxBfOx31IDwDIXMTxWuwAxUGModvkbuVw==
 
+cleave.js@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/cleave.js/-/cleave.js-1.6.0.tgz#0e4e011943bdd70c67c9dcf4ff800ce710529171"
+  integrity sha512-ivqesy3j5hQVG3gywPfwKPbi/7ZSftY/UNp5uphnqjr25yI2CP8FS2ODQPzuLXXnNLi29e2+PgPkkiKUXLs/Nw==
+
 cli-cursor@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/cli-cursor/-/cli-cursor-4.0.0.tgz#3cecfe3734bf4fe02a8361cbdc0f6fe28c6a57ea"
@@ -1423,6 +1443,11 @@ colorette@^2.0.19:
   version "2.0.19"
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-2.0.19.tgz#cdf044f47ad41a0f4b56b3a0d5b4e6e1a2d5a798"
   integrity sha512-3tlv/dIP7FWvj3BsbHrGLJ6l/oKh1O3TcgBqMn+yyCagOxc23fyzDS6HypQbgxWbkpDnf52p1LuR4eWDQ/K9WQ==
+
+colortranslator@^1.9.2:
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/colortranslator/-/colortranslator-1.9.3.tgz#44bf8b678b576145f0d099fda8bd6ad29b20cf8a"
+  integrity sha512-51O07JAa8J0uIZT08FOGirqRBK9DVG0luuTNjYk9FdawE4tFc3yp7jQhRkZQsUDRwCnKa4CwMRuJIiaSeXsGvg==
 
 commander@^2.20.0:
   version "2.20.3"
@@ -3095,7 +3120,7 @@ nuxi@3.0.0-rc.13:
   optionalDependencies:
     fsevents "~2.3.2"
 
-nuxt@3.0.0-rc.13:
+nuxt@3.0.0-rc.13, nuxt@^3.0.0-rc.9:
   version "3.0.0-rc.13"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-3.0.0-rc.13.tgz#30a14dbf4da1aa61b369c7ea93759e9e9b87d42c"
   integrity sha512-iqAwrYzFuKK5HuJRa1XQ/K2WUYdOI7JjxYLWAJyAejzvUO/+Pj87fhqozzymlJxrdKM53UqBfur+KN+DE0nRzw==
@@ -4429,6 +4454,16 @@ vue@^3.2.41:
     "@vue/runtime-dom" "3.2.44"
     "@vue/server-renderer" "3.2.44"
     "@vue/shared" "3.2.44"
+
+vuestic-ui@^1.4.10:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/vuestic-ui/-/vuestic-ui-1.5.0.tgz#4e9c5a94799cc01016c96b53414fd28036da8f1d"
+  integrity sha512-zXjeV6/Q1btIVjvBjpUTaC0HBNKZ8Se5RTf9xky7uIjhMATpJDvt9nC7G2FbXIYcKJ/UVIKghk7JuPh0lKASNQ==
+  dependencies:
+    "@types/lodash" "^4.14.161"
+    cleave.js "^1.6.0"
+    colortranslator "^1.9.2"
+    lodash "^4.17.21"
 
 wcwidth@^1.0.1:
   version "1.0.1"

@@ -10,5 +10,8 @@
   "devDependencies": {
     "@unocss/nuxt": "^0.46.4",
     "nuxt": "3.0.0-rc.13"
+  },
+  "dependencies": {
+    "@vuestic/nuxt": "^1.0.6"
   }
 }
