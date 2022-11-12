@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   modules: [
     '@unocss/nuxt',
     '@vuestic/nuxt',
+    '@vueuse/nuxt',
   ],
   unocss: {
     // presets
