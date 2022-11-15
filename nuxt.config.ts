@@ -20,6 +20,20 @@ export default defineNuxtConfig({
         "sans": ['Poppins:200,300,400,500,600,700,800,900'],
       },
     },
+    preflights: [
+      {
+        getCSS: ({ theme }) => `
+          * {
+            font-family: ${theme['fontFamily']['sans']};
+          }
+          body {
+            background: #ffffff;
+            padding: 0;
+            margin: 0;
+          }
+        `
+      }
+    ],
   },
   vuestic: {
     // config: {
