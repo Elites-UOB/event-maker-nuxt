@@ -1,12 +1,15 @@
 <template>
-    <div flex="~  justefiy-between" w="full" m="auto" justefiy="between" left="0" items="center"  top="0" bg="#D9D9D9">
+    <header flex="~ " justify="between" px="20" h="20"  left="0" items="center"  top="0" bg="#D9D9D9">
+        
+            <NuxtLink to="/" un-text="3xl  black" font="bold">Events</NuxtLink>
+        
         <div>
-            <h1 text="2xl bold">Events</h1>
-        </div>
-        <div>
-            <i class="fas fa-plus"></i>
+            <!-- <Icon :icon="n.icon" class="w-4 h-4" /> -->
             <span>Add Event</span>
         </div>
-    </div>
+    </header>
 </template>
+<script setup>
+// import { Icon } from "@iconify/vue";
+</script>
 
