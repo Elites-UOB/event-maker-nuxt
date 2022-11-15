@@ -1,15 +1,11 @@
 <template>
-    <header flex="~ " justify="between" px="20" h="20"  left="0" items="center"  top="0" bg="#D9D9D9">
-        
+    <nav flex="~ " justify="between" px="20" h="20"  left="0" items="center"  top="0" bg="#D9D9D9" font="sans">
             <NuxtLink to="/" un-text="3xl  black" font="bold">Events</NuxtLink>
-        
         <div>
-            <!-- <Icon :icon="n.icon" class="w-4 h-4" /> -->
+            <!-- <div class="invisible group-hover:visible i-ic-baseline-plus"></div> -->
+            <div text="black" class="i-ic-baseline-plus"></div>
             <span>Add Event</span>
         </div>
-    </header>
+    </nav>
 </template>
-<script setup>
-// import { Icon } from "@iconify/vue";
-</script>
 

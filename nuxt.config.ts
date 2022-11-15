@@ -14,6 +14,12 @@ export default defineNuxtConfig({
     // core options
     shortcuts: [],
     rules: [],
+    webFonts: {
+      provider: 'google',
+      fonts: {
+        "sans": ['Poppins:200,300,400,500,600,700,800,900'],
+      },
+    },
   },
   vuestic: {
     // config: {
