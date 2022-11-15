@@ -3,3 +3,5 @@
         <Event />
     </div>
 </template>
+<script setup>
+</script>
