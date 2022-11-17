@@ -4,15 +4,15 @@
         <!-- container holds the content in the middle and the end -->
         <div w="90%" h="100%" flex="~" justify="evenly" items="center">
             <ul flex="~" justify="around" font="bold" text="lg" w="80%" xl:text="xl">
-                <li>Home</li>
-                <li>My Events</li>
-                <li>Services</li>
-                <li>Manage Events</li>
+                <li cursor="pointer">Home</li>
+                <li cursor="pointer">My Events</li>
+                <li cursor="pointer">Services</li>
+                <li cursor="pointer">Manage Events</li>
             </ul>
             <!-- container holds the profile information -->
             <div border="2px solid white" flex="~" p=".1em">
                 <div>
-                    <img src="./img/fluent-emoji_man-beard-medium.png" alt="user image">
+                    <img :src="userPhoto" alt="user image">
                 </div>
                 <div flex="~" px=".5em">
                     <div>
@@ -29,6 +29,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import userPhoto from "../public/fluent-emoji_man-beard-medium.png"
 
 const arrowDownRef = ref(null)
 
