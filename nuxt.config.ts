@@ -27,5 +27,5 @@ export default defineNuxtConfig({
     // },
 
     css: ['typography', 'reset','grid'],
-  }
+  },
 })
