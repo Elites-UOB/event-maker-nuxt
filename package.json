@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.1.0",
-    "@vuestic/nuxt": "^1.0.6"
+    "@vuestic/nuxt": "^1.0.6",
+    "nuxt-icon": "^0.1.7"
   }
 }

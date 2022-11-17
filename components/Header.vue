@@ -1,5 +1,5 @@
 <template>
-    <nav flex="~ " justify="between" px="20" h="20"  items="center"  bg="#D9D9D9" font="sans" w="100%">
+    <nav flex="~ " justify="between" px="20" h="20" items="center" bg="#D9D9D9" font="sans" w="100%">
         <NuxtLink to="/" un-text="3xl  black" font="black">EVENTO</NuxtLink>
         <!-- container holds the content in the middle and the end -->
         <div w="90%" h="100%" flex="~" justify="evenly" items="center">
@@ -19,8 +19,10 @@
                         <h3 font="black">Hassan Mohamed</h3>
                         <p text="sm">helloWorld@gmail.com</p>
                     </div>
-                    <img @click="toggleArrowDown()" ref="arrowDownRef" class="" cursor="pointer" object="contain"
-                        src="./icons/arrowDown.png" alt="arrown down" />
+                    <div @click="toggleArrowDown()" cursor="pointer" ref="arrowDownRef" self="center">
+                        <Icon class="" text="2xl" name="ic-baseline-keyboard-arrow-down" />
+                    </div>
+
                 </div>
             </div>
         </div>

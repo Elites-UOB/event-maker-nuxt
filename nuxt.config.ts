@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@vuestic/nuxt',
     '@vueuse/nuxt',
+    ['nuxt-icon']
   ],
   unocss: {
     // presets
