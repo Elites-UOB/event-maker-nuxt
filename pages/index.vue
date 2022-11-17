@@ -1,6 +1,7 @@
 <template>
-    <section flex="~" justify="center" items="start" w="80%">
+    <section  flex="~" justify="around" items="start" w="fit-content">
         <EventContainerVue content="Zain" image="this is an image" />
+        <div></div>
     </section>
 </template>
 

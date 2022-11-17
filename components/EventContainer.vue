@@ -1,5 +1,5 @@
 <template>
-    <div bg="#D9D9D9" w="50em" h="8em" flex="~" items="center">
+    <div bg="#D9D9D9" w="100%" lg:w="45em" xl:w="60em"  h="8em" flex="~" items="center">
         <div bg="white" w="7em" h="6em" mx=".5em">
             {{ image }}
         </div>

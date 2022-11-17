@@ -1,9 +1,8 @@
 <template>
-    <nav flex="~ " justify="between" px="20" h="20" left="0" items="center" top="0" bg="#D9D9D9" font="sans">
+    <nav flex="~ " justify="between" px="20" h="20" left="0" items="center" top="0" bg="#D9D9D9" font="sans" w="100%">
         <NuxtLink to="/" un-text="3xl  black" font="black">EVENTO</NuxtLink>
+        <!-- container holds the content in the middle and the end -->
         <div w="90%" h="100%" flex="~" justify="evenly" items="center">
-            <!-- <div class="invisible group-hover:visible i-ic-baseline-plus"></div>
-            <div text="black" class="i-ic-baseline-plus"></div> -->
             <ul flex="~" justify="around" font="bold" text="lg" w="80%">
                 <li>Home</li>
                 <li>My Events</li>
