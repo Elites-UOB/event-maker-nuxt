@@ -7,11 +7,12 @@ const useAuth = () => {
     })
 
         
-    const signUp = async ({ email, password, ...metadata }) => {
+    const signUp = async ({ email, password,name ,...metadata }) => {
         const { user: u, error } = await supabase.auth.signUp(
             {
                 email,
                 password,
+                name,
             }, {
             data: metadata,
             redirectTo: `${window.location.origin}/`,
@@ -22,9 +23,9 @@ const useAuth = () => {
         return u
     }
     
-    const signIn = async ({ email, password }) => {
+    const signIn = async ({ name, password }) => {
         const { user: u, error } = await supabase.auth.signIn({
-                email,
+                name,
                 password,
             })
         if (error) throw error
