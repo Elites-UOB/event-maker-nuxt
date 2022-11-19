@@ -8,10 +8,13 @@ export default defineNuxtConfig({
   ],
   unocss: {
     // presets
+    autoImport: true,
     uno: true, // enabled `@unocss/preset-uno`
     icons: true, // enabled `@unocss/preset-icons`
-    attributify: true, // enabled `@unocss/preset-attributify`,
-
+    attributify: {
+      ignoreAttributes: ['label'],
+    }, // enabled `@unocss/preset-attributify`,
+    typography: true,
     // core options
     shortcuts: [],
     rules: [],
@@ -23,18 +26,32 @@ export default defineNuxtConfig({
     },
     preflights: [
       {
-        getCSS: ({ theme }) => `
+         getCSS: ({ theme }) => `
           * {
             font-family: ${theme['fontFamily']['sans']};
           }
           body {
-            background: #ffffff;
+            background: #27292B;
             padding: 0;
             margin: 0;
+            direction: rtl;
           }
         `
       }
     ],
+    theme: {
+      height: {
+        "main-content": "calc(100vh - 11rem)",
+      },
+      colors: {
+        "dark": "#444444",
+        "light": "#444444",
+        "mid": "#B7B7B7",
+        "error": "#FF493E",
+        "warning": "#FFCC42",
+        "success": "#0B84FF",
+      }
+    },
   },
   vuestic: {
     // config: {

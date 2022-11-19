@@ -3,8 +3,9 @@
         <div bg="white" w="7em" h="6em" mx=".5em">
             {{ image }}
         </div>
-        <div h="full" w="full" p="1em">
-            {{ content }}
+        <div h="full" w="full" p="1em" flex="~" items="center" >
+            {{ content }} <br>
+            {{ enterprise }}
         </div>
     </div>
 </template>
@@ -16,6 +17,10 @@ const props = defineProps({
         required: true
     },
     image: {
+        type: String,
+        required: true
+    },
+    enterprise: {
         type: String,
         required: true
     }
