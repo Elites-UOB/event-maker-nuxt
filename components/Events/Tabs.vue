@@ -13,9 +13,9 @@
                     ? 'bg-success text-light'
                     : '',
                 index == 0
-                    ? 'rounded-t-xl ' : '', index == 2
+                    ? 'rounded-t-xl ' : ' ', index == 2
                     ? 'rounded-b-xl ' : '',
-            ]" p="3" hover="border border-2 border-success">
+            ]" p="3" hover=" border-2 border-success">
                 <svg v-if="index == 0" width="24" height="28" viewBox="0 0 22 28" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path

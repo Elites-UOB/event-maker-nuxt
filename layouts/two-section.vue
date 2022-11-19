@@ -1,5 +1,5 @@
 <template>
-    <div flex>
+    <div flex="~" mt="12">
         <div flex="basis-1/5">
             <slot name="left" />
         </div>
