@@ -13,14 +13,15 @@ const useAuth = () => {
                 email,
                 password,
             }, {
-            data: metadata
+            data: metadata,
+            redirectTo: `${window.location.origin}/`,
         }
 
         )
         if (error) throw error
         return u
     }
-
+    
     const signIn = async ({ email, password }) => {
         const { user: u, error } = await supabase.auth.signIn({
                 email,
