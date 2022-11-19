@@ -1,8 +1,8 @@
 <template>
-    <div flex="~" text="light " items="start" >
+    <div flex="~" text="light " items="start"  >
         <div flex="~ col gap-12" justify="between" h="72" w="150" items="start">
             <!--  -->
-            <div flex="~ col-2 gap-16">
+            <div flex="~ col-2 gap-22">
                 <div class="opacity-40">
                     عن الحدث
                 </div>
@@ -19,7 +19,7 @@
                 </div>
             </div>
             <!--  -->
-            <div flex="~ col-2 gap-16">
+            <div flex="~ col-2 gap-22">
                 <div class="opacity-40">
                     مدة الحدث
                 </div>
@@ -44,7 +44,7 @@
                 </div>
             </div>
             <!--  -->
-            <div flex="~ col-2 gap-16">
+            <div flex="~ col-2 gap-22">
                 <div class="opacity-40">
                     رابط الحدث
                 </div>

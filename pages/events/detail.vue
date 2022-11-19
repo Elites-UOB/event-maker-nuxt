@@ -17,7 +17,7 @@
                         <EventsPeople />
                     </template>
                     <template #tab-3>
-                        <EventsA />
+                        <EventsAdd />
                     </template>
                 </EventsTabs>
             </template>
