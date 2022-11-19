@@ -7,7 +7,7 @@
                 <NuxtLink v-for="item in nav" :key="item"  cursor="pointer">{{item.name}}</NuxtLink>
             </ul>
             <!-- container holds the profile information -->
-            <div border="2px solid white" flex="~" p=".3em">
+            <NuxtLink border="2px solid white" flex="~" p=".3em" to="/events">
                 <div>
                     <img :src="userPhoto" alt="user image">
                 </div>
@@ -21,7 +21,7 @@
                     </div>
 
                 </div>
-            </div>
+            </NuxtLink>
         </div>
     </nav>
 </template>

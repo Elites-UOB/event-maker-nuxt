@@ -45,7 +45,7 @@ export default defineNuxtConfig({
       },
       colors: {
         "dark": "#444444",
-        "light": "#444444",
+        "light": "#FFFFFF",
         "mid": "#B7B7B7",
         "error": "#FF493E",
         "warning": "#FFCC42",

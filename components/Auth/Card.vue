@@ -1,10 +1,10 @@
 <template>
-    <div grid="~ cols-1 gap-4" w="1/2" P="4">
-        <h1>{{ authState }}</h1>
-        <va-input placeholder="email" bordered type="email" v-model="input.email" />
-        <va-input placeholder="password" bordered type="password" v-model="input.password" />
-        <va-button preset="primary" class="mr-4 mb-2" @click="handleSubmit">Submit</va-button>
-        <va-button preset="primary" class="mr-4 mb-2" @click="signOut">Logout</va-button>
+    <div grid="~ cols-1 gap-4" w="1/4" P="4" class="center">
+        <h1 text="light 2xl">{{ authState }}</h1>
+        <input placeholder="email"  type="email" v-model="input.email" bg="#27292B" border="rounded-md light opacity-20" focus="border-success" text="light" p="3"  />
+        <input placeholder="password"  type="password" v-model="input.password" bg="#27292B" border="rounded-md light opacity-20" focus="border-success" text="light" p="3"  />
+        <va-button preset="primary" class=" mb-2" @click="handleSubmit"  >Submit</va-button>
+        <va-button preset="primary" class=" mb-2" @click="signOut" >Logout</va-button>
         <p text="blue-800" @click="toggleAuthState">{{ authState === 'Login' ? 'Create new account' : 'Already have anaccount' }}</p>
         {{user}}
     </div>
