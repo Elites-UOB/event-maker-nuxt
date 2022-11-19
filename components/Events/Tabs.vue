@@ -7,7 +7,7 @@
             </div>
         </div>
         <!-- Header - BUTTONS -->
-        <div class="absolute " right="32" bg="dark" border=" rounded-xl">
+        <div class="absolute " right="32" bg="dark" border="  rounded-xl">
             <div v-for="(label, index) in labels" :key="label" @click="selectedTab = index" :class="[
                 selectedTab == index
                     ? 'bg-success text-light'
