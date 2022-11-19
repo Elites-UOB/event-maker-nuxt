@@ -4,10 +4,11 @@
         <!-- container holds the content in the middle and the end -->
         <div w="90%" h="100%" flex="~" justify="evenly" items="center">
             <ul flex="~ " mx="16" justify="around" font="bold" text="lg" w="70%" xl:text="xl">
-                <NuxtLink v-for="item in nav" :key="item"  cursor="pointer">{{item.name}}</NuxtLink>
+                <NuxtLink v-for="nav in navs" :key="nav.name"
+        :to="nav.path"   cursor="pointer" un-text="dark">{{ nav.name }}</NuxtLink>
             </ul>
             <!-- container holds the profile information -->
-            <NuxtLink border="2px solid white" flex="~" p=".3em" to="/events">
+            <NuxtLink border="2px solid white" flex="~" p=".3em" to="/profile/sign">
                 <div>
                     <img :src="userPhoto" alt="user image">
                 </div>
@@ -35,11 +36,11 @@ const arrowDownRef = ref(null)
 const toggleArrowDown = () => {
     arrowDownRef.value.classList.toggle('rotate')
 }
-const nav = [
-    {name: 'Home',link: '/'},
-    {name: 'My Events',link: '/'},
-    {name: 'Services',link: '/'},
-    {name: 'Manage Events',link: '/'}
+const navs = [
+    {name: 'Home', path: '/'},
+    {name: 'My Events', path: '/events'},
+    {name: 'Services', path: '/'},
+    {name: 'Manage Events', path: '/'}
 ]
 
 </script>

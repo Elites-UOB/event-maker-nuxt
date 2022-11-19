@@ -1,5 +1,10 @@
 <template>
-    <div flex="~" items="center" justify="center" m="auto" h="100" >
-        <AuthCard />
-    </div>
+    <EventsTabs :labels="tabs" >
+        <template #tab-1><EventsDetail/></template>
+        <template #tab-2><EventsPeople /></template>
+        <template #tab-3><EventsA /></template>
+    </EventsTabs>
 </template>
+<script setup>
+const tabs = ['Tab 1', 'Tab 2', 'Tab 3']
+</script>
