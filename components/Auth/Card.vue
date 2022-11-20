@@ -2,11 +2,11 @@
     <div w="1/4">
         <div v-if="!showConfirmemail" class="center" P="4" flex="~ col  gap-4">
             <!-- <h1 text="light 2xl center">{{ authState }}</h1> -->
-            <div flex="~ col gap-1"><label text="light sm opacity-60 " for="name">المعرف</label>
+            <div v-if="authState == 'Singup'" flex="~ col gap-1"><label text="light sm opacity-60 " for="name">المعرف</label>
                 <input type="name" v-model="input.name" bg="#27292B" border="rounded-md light opacity-20"
                     focus="border-success" text="light" p="3" required />
             </div>
-            <div v-if="authState == 'Singup'" flex="~ col gap-1"><label text="light sm opacity-60 "
+            <div  flex="~ col gap-1"><label text="light sm opacity-60 "
                     for="email">الايميل</label>
                 <input type="email" v-model="input.email" bg="#27292B" border="rounded-md light opacity-20"
                     focus="border-success" text="light" p="3" required />
@@ -25,7 +25,7 @@
         <div v-else>
             <h3 text="xl light ">تحقق من بريدك الإلكتروني للتحقق من حسابك</h3>
         </div>
-        {{user}}
+        
     </div>
 </template>
 <script setup lang="ts">
@@ -44,7 +44,7 @@ const router = useRouter()
 const handleSubmit = async () => {
     try {
         if (authState.value === 'Login') {
-            await signIn({ name: input.name, password: input.password })
+            await signIn({ email: input.email, password: input.password })
             router.push('/profile')
         } else {
             await signUp({ name: input.name, email: input.email, password: input.password })

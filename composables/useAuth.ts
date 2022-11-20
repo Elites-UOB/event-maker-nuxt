@@ -24,9 +24,9 @@ const useAuth = () => {
         return u
     }
     
-    const signIn = async ({ name, password }) => {
-        const { user: u, error } = await supabase.auth.signIn({
-                name,
+    const signIn = async ({ email, password }) => {
+        const { user: u, error } = await supabase.auth.signInWithPassword({
+                email,
                 password,
             })
         if (error) throw error
@@ -38,6 +38,7 @@ const useAuth = () => {
         if (error) throw error  
         router.push('/')
     }
+    
 
     const isLoggedIn = () => {
         return !!user.value

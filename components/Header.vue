@@ -8,15 +8,14 @@
         :to="nav.path"   cursor="pointer" un-text="dark">{{ nav.name }}</NuxtLink>
             </ul>
             <!-- container holds the profile information -->
-            <NuxtLink v-if="isLoggedIn()" 
-          to="/profile" border="2px solid white" flex="~" p=".3em" >
+            <NuxtLink v-if="isLoggedIn()" to="/profile" border="2px solid white" flex="~" p=".3em" >
                 <div>
                     <img :src="userPhoto" alt="user image">
                 </div>
                 <div flex="~" px=".5em">
                     <div>
-                        <h3 font="black">Hassan Mohamed</h3>
-                        <p text="sm">helloWorld@gmail.com</p>
+                        <h3 font="black">{{ user.email }}</h3>
+                        <!-- <p text="sm">helloWorld@gmail.com</p> -->
                     </div>
                     <div @click="toggleArrowDown()" cursor="pointer" ref="arrowDownRef" self="center">
                         <Icon class="" text="2xl" name="ic-baseline-keyboard-arrow-down" />
@@ -24,8 +23,8 @@
                 </div>
             </NuxtLink>
             <!-- join button -->
-            <NuxtLink to="/auth/sign"  un-text="white center" bg="success" border="0 rounded-md" py="3" px="4" w="22" mr="3">انضمام</NuxtLink>
-                        <button v-if="isLoggedIn()" @click="signOut"  un-text="white center" bg="success" border="0 rounded-md" py="3" px="4" w="22" mr="3">انضمام
+            <NuxtLink to="/auth/sign" :class="isLoggedIn() ? 'hidden' : 'visible'"  un-text="white center" bg="success" border="0 rounded-md" py="3" px="4" w="22" mr="3">انضمام</NuxtLink>
+                        <button v-if="isLoggedIn()" @click="signOut"  un-text="white center" bg="success" border="0 rounded-md" py="3" px="3" w="40" mr="3">تسجيل خروج 
                         </button>
 
         </div>
@@ -47,7 +46,7 @@ const navs = [
     {name: 'Services', path: '/'},
     {name: 'Manage Events', path: '/'}
 ]
-const { isLoggedIn , signOut} = useAuth()
+const { isLoggedIn , signOut , user} = useAuth()
 
 </script>
 

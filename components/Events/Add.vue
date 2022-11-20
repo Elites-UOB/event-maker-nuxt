@@ -9,8 +9,8 @@
                 <div flex="~ col-3 gap-8" justify="between" items="end">
                     <div flex="~ col gap-1">
                         <label>الايميل</label>
-                        <input type="name" bg="#27292B" border="rounded-md light opacity-20"
-                            focus=" border border-success" text="light" py="2" px="8" w="96" />
+                        <input type="name" bg="#27292B" border="rounded-md light  opacity-20"
+                            hover=" border-success" text="light" py="2" px="8" w="96" />
                     </div>
                     <div flex="~ col gap-1">
                         <label>الصفة </label>
@@ -69,7 +69,7 @@
                                         <Icon name="material-symbols:print" text="2xl" />
                                     </button>
                                     <button text="light md" bg="light" class="bg-opacity-20" py="2" px="3"
-                                        border="1 light opacity-10 rounded-xl ">
+                                        border="1 light opacity-10 rounded-xl " hover="bg-error">
                                         <Icon name="ant-design:user-delete-outlined" text="2xl" />
                                     </button>
                                 </div>
@@ -104,7 +104,7 @@
                                         <Icon name="material-symbols:print" text="2xl" />
                                     </button>
                                     <button text="light md" bg="light" class="bg-opacity-20" py="2" px="3"
-                                        border="1 light opacity-10 rounded-xl ">
+                                        border="1 light opacity-10 rounded-xl " hover="bg-error">
                                         <Icon name="ant-design:user-delete-outlined" text="2xl" />
                                     </button>
                                 </div>
