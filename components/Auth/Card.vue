@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div v-if="!showConfirmemail" class="center" P="4" flex="~ col  gap-4">
+    <div w="1/4">
+        <div v-if="!showConfirmemail"  class="center" P="4" flex="~ col  gap-4">
             <!-- <h1 text="light 2xl center">{{ authState }}</h1> -->
             <div v-if="authState == 'Singup'" flex="~ col gap-1"><label text="light sm opacity-60 " for="name">المعرف</label>
                 <input type="name" v-model="input.name" bg="#27292B" border="rounded-md light opacity-20"
@@ -17,7 +17,6 @@
             </div>
             <va-button v-if="authState == 'Login'" @click="handleSubmit" color="info">تسجيل الدخول</va-button>
             <va-button v-if="authState == 'Singup'" @click="handleSubmit" color="info"> انشاء حساب</va-button>
-            <!-- <va-button preset="primary" class=" mb-2" @click="signOut" >Logout</va-button> -->
             <p v-if="authError" text="error">{{ authError }}</p>
             <p text="blue-700" @click="toggleAuthState">{{ authState === 'Login' ? ' انشاء حساب جديد ؟' : 'لدي حساب بالفعل'
             }}</p>
@@ -29,7 +28,7 @@
     </div>
 </template>
 <script setup lang="ts">
-const { signUp, signIn, signOut, user } = useAuth();
+const { signUp, signIn, user } = useAuth();
 const input = reactive({
     name: '',
     email: '',
