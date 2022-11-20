@@ -1,6 +1,7 @@
 <template>
     <div flex="~ col " h="full" font="sans">
-        <Header />
+        <Header  />
+        <!-- <Sidebar /> -->
         <div flex="grow " >
             <slot />
         </div>

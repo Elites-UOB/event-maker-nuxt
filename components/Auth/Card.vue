@@ -1,5 +1,5 @@
 <template>
-    <div w="1/4">
+    <div>
         <div v-if="!showConfirmemail" class="center" P="4" flex="~ col  gap-4">
             <!-- <h1 text="light 2xl center">{{ authState }}</h1> -->
             <div v-if="authState == 'Singup'" flex="~ col gap-1"><label text="light sm opacity-60 " for="name">المعرف</label>
