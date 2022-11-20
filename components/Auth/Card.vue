@@ -25,6 +25,7 @@
         <div v-else>
             <h3 text="xl light ">تحقق من بريدك الإلكتروني للتحقق من حسابك</h3>
         </div>
+        {{user}}
     </div>
 </template>
 <script setup lang="ts">
@@ -44,7 +45,7 @@ const handleSubmit = async () => {
     try {
         if (authState.value === 'Login') {
             await signIn({ name: input.name, password: input.password })
-            router.push('/')
+            router.push('/profile')
         } else {
             await signUp({ name: input.name, email: input.email, password: input.password })
             showConfirmemail.value = true

@@ -8,7 +8,8 @@
         :to="nav.path"   cursor="pointer" un-text="dark">{{ nav.name }}</NuxtLink>
             </ul>
             <!-- container holds the profile information -->
-            <NuxtLink border="2px solid white" flex="~" p=".3em" to="/auth/sign">
+            <NuxtLink v-if="isLoggedIn()" 
+          to="/profile" border="2px solid white" flex="~" p=".3em" >
                 <div>
                     <img :src="userPhoto" alt="user image">
                 </div>
@@ -20,9 +21,13 @@
                     <div @click="toggleArrowDown()" cursor="pointer" ref="arrowDownRef" self="center">
                         <Icon class="" text="2xl" name="ic-baseline-keyboard-arrow-down" />
                     </div>
-
                 </div>
             </NuxtLink>
+            <!-- join button -->
+            <NuxtLink to="/auth/sign"  un-text="white center" bg="success" border="0 rounded-md" py="3" px="4" w="22" mr="3">انضمام</NuxtLink>
+                        <button v-if="isLoggedIn()" @click="signOut"  un-text="white center" bg="success" border="0 rounded-md" py="3" px="4" w="22" mr="3">انضمام
+                        </button>
+
         </div>
     </nav>
 </template>
@@ -42,6 +47,7 @@ const navs = [
     {name: 'Services', path: '/'},
     {name: 'Manage Events', path: '/'}
 ]
+const { isLoggedIn , signOut} = useAuth()
 
 </script>
 
