@@ -47,7 +47,7 @@ const handleSubmit = async () => {
             await signIn({ email: input.email, password: input.password })
             router.push('/profile')
         } else {
-            await signUp({ name: input.name, email: input.email, password: input.password })
+            await signUp({ email: input.email, password: input.password, name: input.name })
             showConfirmemail.value = true
         }
         input.email = ''

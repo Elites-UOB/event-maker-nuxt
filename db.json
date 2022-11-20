@@ -1,0 +1,13 @@
+{
+  "events": [
+    { "id": 1,
+     "title": "حفل افتتاح الطلبة الجدد",
+      "description": "هذا الحدث كذا وكذا ",
+      "img_url" : "https://www.imgacademy.com/sites/default/files/events-hero-logo-v2.png",
+      "profile_id" : 1,
+      "time" : "2020-10-10",
+      "event_type_id" : 1,
+      "city_id" : 1
+     }
+  ]
+}

@@ -8,12 +8,12 @@ const useAuth = () => {
     })
 
         
-    const signUp = async ({ email, password,name ,...metadata }) => {
+    const signUp = async ({ email, password,...metadata }) => {
         const { user: u, error } = await supabase.auth.signUp(
             {
                 email,
                 password,
-                name,
+                
             }, {
             data: metadata,
             redirectTo: `${window.location.origin}/profile`,
