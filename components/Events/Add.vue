@@ -31,16 +31,16 @@
                 </div>
                 <div flex="~ col-3 gap-8" justify="between" items="end">
                     <div>
-                        <button text="light md" bg="#444444" py="2" px="18" border="1 light opacity-10 rounded-md"
-                            hover="bg-success">اضافة</button>
+                        <button text="light md" bg="#444444" py="2" px="16" border="1 light opacity-10 rounded-md"
+                            hover="bg-success">ارسال بريد</button>
                     </div>
                     <div>
-                        <button text="light md" bg="#444444" py="2" px="18" border="1 light opacity-10 rounded-md"
-                            hover="bg-success">اضافة</button>
+                        <button text="light md" bg="#444444" py="2" px="16" border="1 light opacity-10 rounded-md"
+                            hover="bg-success">طباعة البطاقات</button>
                     </div>
                     <div>
-                        <button text="light md" bg="#444444" py="2" px="18" border="1 light opacity-10 rounded-md"
-                            hover="bg-success">اضافة</button>
+                        <button text="light md" bg="#444444" py="2" px="16" border="1 light opacity-10 rounded-md"
+                            hover="bg-success">طباعة القائمة</button>
                     </div>
                 </div>
             </div>
@@ -64,13 +64,13 @@
                                 <div>فلان ابن فلان </div>
                                 <div>اعلامي</div>
                                 <div flex="~ gap-2">
-                                    <button text="light md" bg="light" class="bg-opacity-20" py="3" px="4"
+                                    <button text="light md" bg="light" class="bg-opacity-20" py="2" px="3"
                                         border="1 light opacity-10 rounded-xl" hover="bg-success">
-                                        <Icon name="material-symbols:print" text="xl" />
+                                        <Icon name="material-symbols:print" text="2xl" />
                                     </button>
-                                    <button text="light md" bg="light" class="bg-opacity-20" py="3" px="4"
+                                    <button text="light md" bg="light" class="bg-opacity-20" py="2" px="3"
                                         border="1 light opacity-10 rounded-xl ">
-                                        <Icon name="ant-design:user-delete-outlined" text="xl" />
+                                        <Icon name="ant-design:user-delete-outlined" text="2xl" />
                                     </button>
                                 </div>
                             </div>
@@ -99,13 +99,13 @@
                                 <div>حضور <Icon name="material-symbols:edit" text="xl" />
 </div> 
                                 <div flex="~ gap-2">
-                                    <button text="light md" bg="light" class="bg-opacity-20" py="3" px="4"
+                                    <button text="light md" bg="light" class="bg-opacity-20" py="2" px="3"
                                         border="1 light opacity-10 rounded-xl" hover="bg-success">
-                                        <Icon name="material-symbols:print" text="xl" />
+                                        <Icon name="material-symbols:print" text="2xl" />
                                     </button>
-                                    <button text="light md" bg="light" class="bg-opacity-20" py="3" px="4"
+                                    <button text="light md" bg="light" class="bg-opacity-20" py="2" px="3"
                                         border="1 light opacity-10 rounded-xl ">
-                                        <Icon name="ant-design:user-delete-outlined" text="xl" />
+                                        <Icon name="ant-design:user-delete-outlined" text="2xl" />
                                     </button>
                                 </div>
                             </div>

@@ -8,7 +8,7 @@
         :to="nav.path"   cursor="pointer" un-text="dark">{{ nav.name }}</NuxtLink>
             </ul>
             <!-- container holds the profile information -->
-            <NuxtLink border="2px solid white" flex="~" p=".3em" to="/profile/sign">
+            <NuxtLink border="2px solid white" flex="~" p=".3em" to="/auth/sign">
                 <div>
                     <img :src="userPhoto" alt="user image">
                 </div>
