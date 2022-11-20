@@ -1,13 +1,11 @@
 <template>
     <div text="light">
         <NuxtLink to="/events/detail" flex="~ col gap-12" mt="16" justify="around" items="center" m="auto" w="3/4">
-            <EventsEventContainer v-for="event in events" :key="event.id" :event="event" 
-            class=" relative " 
+            <EventsEventContainer v-for="event in events" :key="event.id" :event="event" class=" relative " 
                  />
         </NuxtLink>
         {{ events }}
     </div>
-
 </template>
 <script setup>
 const { supabase } = useSupabase()
