@@ -8,7 +8,7 @@
         :to="nav.path"   cursor="pointer" un-text="dark">{{ nav.name }}</NuxtLink>
             </ul>
             <!-- container holds the profile information -->
-            <NuxtLink v-if="isLoggedIn()" to="/profile" border="2px solid white" flex="~" p=".3em" >
+            <NuxtLink v-if="isLoggedIn()" to="/auth/profile" border="2px solid white" flex="~" p=".3em" >
                 <div>
                     <img :src="userPhoto" alt="user image">
                 </div>
