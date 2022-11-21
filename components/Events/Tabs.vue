@@ -6,36 +6,47 @@
                 <slot v-if="item == (selectedTab + 1)" :name="`tab-${item}`" />
             </div>
         </div>
-        <!-- Header - BUTTONS -->
-        <div class="absolute " right="32" bg="dark" border="  rounded-xl">
-            <div v-for="(label, index) in labels" :key="label" @click="selectedTab = index" :class="[
-                selectedTab == index
-                    ? 'bg-success text-light'
-                    : '',
-                index == 0
-                    ? 'rounded-t-xl ' : ' ', index == 2
-                    ? 'rounded-b-xl ' : '',
-            ]" p="3" hover=" border-2 border-success">
-                <svg v-if="index == 0" width="24" height="28" viewBox="0 0 22 28" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M5.66671 15.3333H16.3334V12.6667H5.66671V15.3333ZM5.66671 19.3333H16.3334V16.6667H5.66671V19.3333ZM5.66671 23.3333H12.3334V20.6667H5.66671V23.3333ZM3.00004 27.3333C2.26671 27.3333 1.63915 27.0725 1.11737 26.5507C0.594707 26.028 0.333374 25.4 0.333374 24.6667V3.33334C0.333374 2.60001 0.594707 1.97201 1.11737 1.44934C1.63915 0.927561 2.26671 0.666672 3.00004 0.666672H13.6667L21.6667 8.66667V24.6667C21.6667 25.4 21.4058 26.028 20.884 26.5507C20.3614 27.0725 19.7334 27.3333 19 27.3333H3.00004ZM12.3334 10H19L12.3334 3.33334V10Z"
-                        fill="white" />
+
+        <!-- Header - TABS for Big Screen Devices -->
+        
+        <div class="absolute hidden md:block" right="10 md:20"  bg="dark" border="rounded-xl">
+            <div v-for="(label, index) in labels" :key="label" @click="selectedTab = index" w="fit-content" :class="[
+                selectedTab == index ? 'bg-success text-light' : '',
+                index == 0 ? 'rounded-t-xl ' : '',
+                index == 2 ? 'rounded-b-xl ' : '',
+            ]" p="3">
+                <svg v-if="index == 0" w="10"  height="28" viewBox="0 0 22 28" fill="none" flex="~" justify="center" items="center">
+                    <Icon name="mdi-file-document" text="white" size="20" />
                 </svg>
-                <svg v-if="index == 1" width="28" height="28" viewBox="0 0 32 32" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M1.33337 26.6667V22.9333C1.33337 22.1778 1.52804 21.4831 1.91737 20.8493C2.30582 20.2164 2.82226 19.7333 3.46671 19.4C4.84449 18.7111 6.24449 18.1942 7.66671 17.8493C9.08893 17.5053 10.5334 17.3333 12 17.3333C13.4667 17.3333 14.9112 17.5053 16.3334 17.8493C17.7556 18.1942 19.1556 18.7111 20.5334 19.4C21.1778 19.7333 21.6943 20.2164 22.0827 20.8493C22.472 21.4831 22.6667 22.1778 22.6667 22.9333V26.6667H1.33337ZM25.3334 26.6667V22.6667C25.3334 21.6889 25.0614 20.7498 24.5174 19.8493C23.9725 18.9498 23.2 18.1778 22.2 17.5333C23.3334 17.6667 24.4 17.8942 25.4 18.216C26.4 18.5387 27.3334 18.9333 28.2 19.4C29 19.8444 29.6112 20.3387 30.0334 20.8827C30.4556 21.4276 30.6667 22.0222 30.6667 22.6667V26.6667H25.3334ZM12 16C10.5334 16 9.27782 15.4778 8.23337 14.4333C7.18893 13.3889 6.66671 12.1333 6.66671 10.6667C6.66671 9.2 7.18893 7.94445 8.23337 6.9C9.27782 5.85556 10.5334 5.33334 12 5.33334C13.4667 5.33334 14.7223 5.85556 15.7667 6.9C16.8112 7.94445 17.3334 9.2 17.3334 10.6667C17.3334 12.1333 16.8112 13.3889 15.7667 14.4333C14.7223 15.4778 13.4667 16 12 16ZM25.3334 10.6667C25.3334 12.1333 24.8112 13.3889 23.7667 14.4333C22.7223 15.4778 21.4667 16 20 16C19.7556 16 19.4445 15.9724 19.0667 15.9173C18.6889 15.8613 18.3778 15.8 18.1334 15.7333C18.7334 15.0222 19.1943 14.2333 19.516 13.3667C19.8387 12.5 20 11.6 20 10.6667C20 9.73334 19.8387 8.83334 19.516 7.96667C19.1943 7.1 18.7334 6.31111 18.1334 5.6C18.4445 5.48889 18.7556 5.41645 19.0667 5.38267C19.3778 5.34978 19.6889 5.33334 20 5.33334C21.4667 5.33334 22.7223 5.85556 23.7667 6.9C24.8112 7.94445 25.3334 9.2 25.3334 10.6667Z"
-                        fill="white" />
+                <svg v-if="index == 1" w="7"  height="28" viewBox="0 0 32 32" fill="none" flex="~" justify="center" items="center">
+                    <Icon name="ic-baseline-people-alt" text="white" size="20" />
                 </svg>
-                <svg v-if="index == 2" width="28" height="28" viewBox="0 0 30 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M0.333374 24V17.3333H3.00004V21.3333H7.00004V24H0.333374ZM23 24V21.3333H27V17.3333H29.6667V24H23ZM4.33337 20V4H7.00004V20H4.33337ZM8.33337 20V4H9.66671V20H8.33337ZM12.3334 20V4H15V20H12.3334ZM16.3334 20V4H20.3334V20H16.3334ZM21.6667 20V4H23V20H21.6667ZM24.3334 20V4H25.6667V20H24.3334ZM0.333374 6.66667V0H7.00004V2.66667H3.00004V6.66667H0.333374ZM27 6.66667V2.66667H23V0H29.6667V6.66667H27Z"
-                        fill="white" />
+                <svg v-if="index == 2" w="7"  height="28" viewBox="0 0 30 24" fill="none" flex="~" justify="center" items="center">
+                    <Icon name="mdi-barcode-scan" text="white" size="20"  />
                 </svg>
             </div>
         </div>
+
+        <!-- Header - TABS for Small Screen Devices -->
+
+        <div class="absolute md:hidden" top="3" right="40%"  flex="~"  bg="dark" border="rounded-xl">
+            <div v-for="(label, index) in labels" :key="label" @click="selectedTab = index" w="fit-content" :class="[
+                selectedTab == index ? 'bg-success text-light' : '',
+                index == 0 ? 'rounded-r-xl ' : '',
+                index == 2 ? 'rounded-l-xl ' : '',
+            ]" p="3">
+                <svg v-if="index == 0" w="10"  height="28" viewBox="0 0 22 28" fill="none" flex="~" justify="center" items="center">
+                    <Icon name="mdi-file-document" text="white" size="20" />
+                </svg>
+                <svg v-if="index == 1" w="7"  height="28" viewBox="0 0 32 32" fill="none" flex="~" justify="center" items="center">
+                    <Icon name="ic-baseline-people-alt" text="white" size="20" />
+                </svg>
+                <svg v-if="index == 2" w="7"  height="28" viewBox="0 0 30 24" fill="none" flex="~" justify="center" items="center">
+                    <Icon name="mdi-barcode-scan" text="white" size="20"  />
+                </svg>
+            </div>
+        </div>
+
     </div>
 </template>
 

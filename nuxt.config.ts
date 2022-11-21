@@ -29,12 +29,18 @@ export default defineNuxtConfig({
          getCSS: ({ theme }) => `
           * {
             font-family: ${theme['fontFamily']['sans']};
+            box-sizing: border-box;
           }
           body {
-            background: #27292B;
+            background: #111111;
             padding: 0;
             margin: 0;
             direction: rtl;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
           }
         `
       }
