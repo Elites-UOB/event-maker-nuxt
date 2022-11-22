@@ -1,19 +1,18 @@
 <template>
     <div text="light">
         <NuxtLink to="/events/detail" flex="~ col gap-12" mt="16" justify="around" items="center" m="auto" w="3/4">
-            <EventContainer v-for="event in events" :key="event.id" :event="event" 
+            <EventsEventContainer v-for="event in events" :key="event.id" :event="event" 
             class=" relative " 
                  />
         </NuxtLink>
         {{ events }}
     </div>
-
 </template>
 <script setup>
 const { supabase } = useSupabase()
 const { user } = useAuth()
 const events = ref()
-///////
+// const { data: events, error } = await supabase.from('events').select('*')
 events.value = await fetch('http://localhost:3000/events').then(res => res.json())
 //////
 // if (process.client) {

@@ -16,7 +16,7 @@ const useAuth = () => {
                 
             }, {
             data: metadata,
-            redirectTo: `${window.location.origin}/profile`,
+            redirectTo: `${window.location.origin}/auth/profile`,
         }
 
         )
