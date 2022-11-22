@@ -12,7 +12,7 @@
 const { supabase } = useSupabase()
 const { user } = useAuth()
 const events = ref()
-///////
+// const { data: events, error } = await supabase.from('events').select('*')
 events.value = await fetch('http://localhost:3000/events').then(res => res.json())
 //////
 // if (process.client) {
