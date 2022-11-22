@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div><swiper :modules="[SwiperPagination]" :pagination="{ clickable: true }" :slides-per-view="1" :loop="true"
+        <swiper :modules="[SwiperPagination]" :pagination="{ clickable: true }" :slides-per-view="1" :loop="true"
             :autoplay="{ delay: 8000, disableOnInteraction: true, }">
             <SwiperSlide v-for="slide in 3" :key="slide">
                 <img src="~/public/eve.png" w="full" h="68" class="" alt="event image">
@@ -8,8 +8,8 @@
                     style="background: linear-gradient(180deg, rgba(40, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);">
                 </div>
             </SwiperSlide>
-        </swiper></div>
-        
+        </swiper>
+
         <section flex="~" justify="center" items="center" h="full">
             <NuxtLink to="/events/detail" flex="~ col gap-12" mt="16" justify="around" items="center" m="auto" w="3/4">
                 <EventsEventContainer v-for="event in 6" :key="event" event="event" class=" relative "
