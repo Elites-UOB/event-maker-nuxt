@@ -8,6 +8,15 @@
       "time" : "2020-10-10",
       "event_type_id" : 1,
       "city_id" : 1
+     },
+     { "id": 2,
+     "title": "2222222222حفل افتتاح الطلبة الجدد",
+      "description": "222222هذا الحدث كذا وكذا ",
+      "img_url" : "https://www.imgacademy.com/sites/default/files/events-hero-logo-v2.png",
+      "profile_id" : 1,
+      "time" : "2022222-10-10",
+      "event_type_id" : 1,
+      "city_id" : 1
      }
   ]
 }
