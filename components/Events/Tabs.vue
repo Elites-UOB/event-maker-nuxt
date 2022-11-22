@@ -9,8 +9,8 @@
 
         <!-- Header - TABS for Big Screen Devices -->
         
-        <div class="absolute hidden md:block" right="10 md:20"  bg="dark" border="rounded-xl">
-            <div v-for="(label, index) in labels" :key="label" @click="selectedTab = index" w="fit-content" :class="[
+        <div class="absolute hidden md:block" right="10 md:10"  bg="dark" border="rounded-xl">
+            <div v-for="(label, index) in labels" :key="label" @click="selectedTab = index" cursor="pointer" :class="[
                 selectedTab == index ? 'bg-success text-light' : '',
                 index == 0 ? 'rounded-t-xl ' : '',
                 index == 2 ? 'rounded-b-xl ' : '',

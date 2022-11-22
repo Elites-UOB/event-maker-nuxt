@@ -8,6 +8,5 @@
 </template>
 
 <script setup>
-
 // import EventContainerVue from '~/components/EventContainer.vue';
 </script>

@@ -7,6 +7,8 @@
             {{ content }} <br>
             {{ enterprise }}
         </div>
+
+        <MaterialSymbolsAddBoxRounded/>
     </div>
 </template>
 
