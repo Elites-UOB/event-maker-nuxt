@@ -6,10 +6,9 @@
                 hover="bg-white rounded-xl" />
         </div>
         <div flex="~ col" gap="10" items="center" justify="center" h="80%">
-            <section>Home</section>
-            <section>My Events</section>
-            <section>Services</section>
-            <section>Manage Events</section>
+            <NuxtLink v-for="nav in navs" :to="nav.link" :key="nav.name" @click="toggleSidebar()">
+                <section text="white" hover="underline">{{ nav.name }}</section>
+            </NuxtLink>
         </div>
     </aside>
 </template>
@@ -21,4 +20,25 @@ const props = defineProps({
         required: true
     }
 })
+
+const navs = [
+    {
+        name: 'Home',
+        link: '/'
+    },
+    {
+        name: 'My Events',
+        link: '/events'
+    },
+    {
+        name: 'Services',
+        link: '/'
+    },
+    {
+        name: 'Manage Events',
+        link: '/'
+    }
+]
+
+
 </script>

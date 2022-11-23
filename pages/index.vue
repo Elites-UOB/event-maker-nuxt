@@ -4,7 +4,7 @@
             :autoplay="{ delay: 8000, disableOnInteraction: true, }">
             <SwiperSlide v-for="slide in 3" :key="slide">
                 <img src="~/public/eve.png" w="full" h="68" class="" alt="event image">
-                <div class="absolute" w="full" h="full" left="0" top="24"
+                <div class="absolute" w="full" h="full" left="0" top="24" flex="~ col" justify="center" items="center"
                     style="background: linear-gradient(180deg, rgba(40, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);">
                 </div>
             </SwiperSlide>

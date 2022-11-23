@@ -5,7 +5,7 @@
         <!-- container holds the content in the middle and the end -->
         <div w="100%" h="100%" flex="~" justify="evenly" items="center" class="!hidden !md:flex">
             <ul flex="~ " gap=".8em" mx="16" justify="around" font="bold" text="md:md lg:lg xl:xl" w="100%">
-                <NuxtLink v-for="nav in navs" :key="nav.name" :to="nav.path" cursor="pointer" un-text="dark">{{ nav.name }}</NuxtLink>
+                <NuxtLink v-for="nav in navs" :key="nav.name" :to="nav.path" cursor="pointer" un-text="dark" hover="underline">{{ nav.name }}</NuxtLink>
             </ul>
             <!-- container holds the profile information -->
             <NuxtLink v-if="isLoggedIn()" to="/auth/profile" border="2px solid white" flex="~" p=".3em">
