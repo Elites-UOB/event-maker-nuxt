@@ -1,5 +1,5 @@
 <template>
-    <div flex="~" text="light " items="start"  >
+    <div flex="~" text="light " items="start">
         <div flex="~ col gap-12" justify="between" h="72" w="150" items="start">
             <!--  -->
             <div flex="~ col-2 gap-22">
@@ -70,22 +70,4 @@
         </div>
     </div>
 </template>
-<script >
 
-// const datePlusDay = (date, days) => {
-//     const d = new Date(date)
-//     d.setDate(d.getDate() + days)
-//     return d
-// }
-// const nextWeek = datePlusDay(new Date(), 7)
-
-// export default {
-//     data() {
-//         return {
-//             single: new Date(),
-//             multiple: [new Date(), nextWeek],
-//             range: { start: new Date(), end: nextWeek },
-//         }
-//     },
-// }
-</script>
