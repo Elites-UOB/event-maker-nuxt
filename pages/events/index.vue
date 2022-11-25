@@ -32,4 +32,3 @@ const events = ref()
 //         .eq('user_id', user.value.id)
 // }
 </script>
-
