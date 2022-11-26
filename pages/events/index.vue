@@ -19,16 +19,3 @@
         </NuxtLink>
     </div>
 </template>
-<script setup>
-const { supabase } = useSupabase()
-const { user } = useAuth()
-const events = ref()
-// events.value = await fetch('http://localhost:3000/events').then(res => res.json())
-//////
-// if (process.client) {
-//     events.value = supabase
-//         .from('http://localhost:3000/events/')
-//         .select()
-//         .eq('user_id', user.value.id)
-// }
-</script>
