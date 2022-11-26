@@ -22,4 +22,3 @@ events.value = await fetch('http://localhost:3000/events').then(res => res.json(
 //         .eq('user_id', user.value.id)
 // }
 </script>
-

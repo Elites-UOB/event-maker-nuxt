@@ -3,3 +3,6 @@
         <AuthCard />
     </div>
 </template>
+
+<script setup>
+</script>
