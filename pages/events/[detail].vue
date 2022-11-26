@@ -24,7 +24,6 @@
                 </EventsTabs>
             </template>
         </NuxtLayout>
-        {{events}}
     </div>
 </template>
 <script setup>

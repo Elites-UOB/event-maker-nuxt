@@ -1,6 +1,6 @@
 <template>
     <div text="light">
-        <Swiper :modules="[SwiperAutoplay]" :slides-per-view="1" :loop="true" :autoplay="{delay: 4000}" :speed="1000">
+        <Swiper :modules="[SwiperAutoplay]" :slides-per-view="1" :loop="true" :autoplay="{ delay: 4000 }" :speed="1000">
             <SwiperSlide v-for="slide in 3" :key="slide" class="swiper-slide">
                 <img src="~/public/eve.png" w="full" h="68" class="" alt="event image">
                 <div class="absolute" z="1" w="full" h="full" left="0" top="24" flex="~ col" justify="center"
@@ -18,11 +18,9 @@
             </SwiperSlide>
         </Swiper>
         <div p="20">
-                            <ServiceIncomingEvents :eventNumber="20" flex="~" class="flex-wrap" />
-
+            <ServiceIncomingEvents :eventNumber="20" flex="~" class="flex-wrap" />
         </div>
     </div>
 </template>
-
 <script setup>
 </script>
