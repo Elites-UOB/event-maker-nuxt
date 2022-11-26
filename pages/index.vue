@@ -8,7 +8,7 @@
                     <button py="5" w="4/5" border="0 rounded-md" text="black bold" font="bold"> ابدا الان</button>
                 </div>
                 <Swiper :modules="[SwiperAutoplay]" :loop="true" :speed="1000" :autoplay="{ delay: 3000, }"
-                    grid="~ gap-2" justify="center" items="center" w="1/2" dir="ltr" text="white">
+                    grid="~ gap-2" justify="center" items="center" w="1/2" dir="ltr" text="white" cursor="grabbing">
                     <SwiperSlide v-for="slide in 5" :key="slide">
                         <div bg="#D9D9D9" alt="calendar" w="180px" h="180px"></div>
                         <h1 text="2xl">حفل استقبال طلبة المرحلة الاولى</h1>
