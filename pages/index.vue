@@ -3,12 +3,7 @@
         <div bg="#0B84FF">
             <div flex="~" justify="between" h="525px" py="12" w="80%" m="auto" items="center">
                 <div grid="~ col-1 gap-11" justify="between">
-                    <!-- <Transition enter-from-class="translate-y-4 opacity-0"
-                        enter-active-class=" transition transform  duration-700 ease-out"
-                        enter-to-class="translate-x-0 opacity-100" leave-from-class="opacity-100"
-                        leave-active-class="transition transform  duration-300 ease-in" leave-to-class="opacity-0"> -->
-                        <h1 v-if="md" text="5xl light" font="bold">Event Maker</h1>
-                    <!-- </Transition> -->
+                    <h1 text="5xl light" font="bold">Event Maker</h1>
                     <span text="2xl  gray-300">ادارة حضور الاحداث لم تكن بهذه السهولة من قبل!</span>
                     <button py="5" w="4/5" border="0 rounded-md" text="black bold" font="bold"> ابدا الان</button>
                 </div>
