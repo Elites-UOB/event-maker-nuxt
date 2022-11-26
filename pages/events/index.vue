@@ -14,3 +14,6 @@
         </Swiper>
     </div>
 </template>
+
+<script setup>
+</script>
