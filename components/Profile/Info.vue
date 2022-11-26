@@ -1,16 +1,27 @@
 <template>
-    <CostumeContainer w="full" flex="~ col" justify="center" items="center">
-        <CostumeBox>
-            hello world from the first box
+    <CostumeContainer w="full" flex="~ col" justify="evenly" items="center" p="2" >
+        <CostumeBox w="full" flex="~ col" items="around" gap="8">
+            <section flex="~ col" gap="3">
+                <h3 w="full" class="leading-4" color="background: #676767">الاسم</h3>
+                <p w="full">نادي النخبة المطورين</p>
+            </section>
+            <section flex="~ col" gap="3">
+                <h3 w="full" class="leading-4" color="background: #676767">الوصف</h3>
+                <p w="full">هذا الحدث كذا وكذا وكذا، راجين منكم التفهم وتعالوا للحدث وشغلاتكم وياكم.ن</p>
+            </section>
+            <section flex="~ col" gap="3">
+                <h3 w="full" class="leading-4" color="background: #676767">الايميل</h3>
+                <p w="full">{{ user.email }}</p>
+            </section>
         </CostumeBox>
-        <CostumeBox>
-            <button v-if="isLoggedIn()" @click="signOut" un-text="white center" bg="success" border="0 rounded-md"
-                py="3" px="3" w="40" mr="3">تسجيل خروج
-            </button>
+
+        <CostumeBox w="full" py="20">
+            <h1 text="3xl">أحداثي</h1>
+            <ServiceIncomingEvents :eventNumber="3"  flex="~" class="flex-wrap"   />
         </CostumeBox>
     </CostumeContainer>
 </template>
 
 <script setup>
-const { isLoggedIn, signOut } = useAuth()
+const { user } = useAuth();
 </script>

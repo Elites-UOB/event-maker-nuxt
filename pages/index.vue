@@ -20,7 +20,7 @@
         </div>
         <div py="12" px="22">
             <ServiceCards />
-            <ServiceIncomingEvents />
+            <ServiceIncomingEvents :eventNumber="4"  />
             <ServiceSupports />
         </div>
     </div>
