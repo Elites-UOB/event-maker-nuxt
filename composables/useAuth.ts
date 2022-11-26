@@ -1,6 +1,6 @@
 const useAuth = () => {
     const user = useState('user', () => null)
-    const { supabase } = useSupabase()
+    const supabase = useSupabaseClient();
     const router = useRouter()
 
     supabase.auth.onAuthStateChange((e, session) => {
