@@ -20,11 +20,15 @@
         </div>
         <div py="12" px="22">
             <ServiceCards />
+            <div flex="~" justify="between" w="4/6  md:1.7/2" class="mx-auto" my="2">
+                <h1 text="white 2xl bold">أحداث قادمة</h1>
+                <h1 text="#background: #676767 2xl">استكشف المزيد</h1>
+            </div>
             <ServiceIncomingEvents :eventNumber="4"  />
-            <ServiceSupports />
+            <ServiceSupports /> 
         </div>
+        <Footer />
     </div>
 </template>
-
 <script setup>
 </script>
