@@ -1964,7 +1964,7 @@ dom-serializer@^1.0.1:
 
 dom7@^4.0.4:
   version "4.0.4"
-  resolved "https://registry.yarnpkg.com/dom7/-/dom7-4.0.4.tgz#8b68c5d8e5e2ed0fddb1cb93e433bc9060c8f3fb"
+  resolved "https://registry.npmjs.org/dom7/-/dom7-4.0.4.tgz"
   integrity sha512-DSSgBzQ4rJWQp1u6o+3FVwMNnT5bzQbMb+o31TjYYeRi05uAcpF8koxdfzeoe5ElzPmua7W7N28YJhF7iEKqIw==
   dependencies:
     ssr-window "^4.0.0"
@@ -3617,7 +3617,7 @@ nuxt-icon@^0.1.7:
 
 nuxt-swiper@^0.1.6:
   version "0.1.6"
-  resolved "https://registry.yarnpkg.com/nuxt-swiper/-/nuxt-swiper-0.1.6.tgz#99ea2be95aa5c312ce6f3fd18d1c6e2b801ef106"
+  resolved "https://registry.npmjs.org/nuxt-swiper/-/nuxt-swiper-0.1.6.tgz"
   integrity sha512-S5jc11uyGfChVo7qbONWAE+9c7mpORSfzHx5HOMWVRzW4/sgzg93gX7skPIgY3bTMDzuwLtRftakRnUIS8miig==
   dependencies:
     "@nuxt/kit" "^3.0.0-rc.11"
@@ -4529,7 +4529,7 @@ sourcemap-codec@^1.4.8:
 
 ssr-window@^4.0.0, ssr-window@^4.0.2:
   version "4.0.2"
-  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-4.0.2.tgz#dc6b3ee37be86ac0e3ddc60030f7b3bc9b8553be"
+  resolved "https://registry.npmjs.org/ssr-window/-/ssr-window-4.0.2.tgz"
   integrity sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==
 
 stable@^0.1.8:
@@ -4669,7 +4669,7 @@ svgo@^2.7.0:
 
 swiper@^8.4.2:
   version "8.4.5"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-8.4.5.tgz#149ca81f67393d3f33abddd0f968fc37e99980b5"
+  resolved "https://registry.npmjs.org/swiper/-/swiper-8.4.5.tgz"
   integrity sha512-zveyEFBBv4q1sVkbJHnuH4xCtarKieavJ4SxP0QEHvdpPLJRuD7j/Xg38IVVLbp7Db6qrPsLUePvxohYx39Agw==
   dependencies:
     dom7 "^4.0.4"
