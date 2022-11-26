@@ -1,7 +1,8 @@
 <template>
-    <div text="light">
-        <h1 text="light">this is your profile</h1>{{ user }}
-    </div>
+    <CostumeContainer text="light" w="full" flex="~ col" items="center" gap="2em" class="profile-container">
+        <h1 text="light">this is your profile</h1>
+        <ProfileInfo/>
+    </CostumeContainer>
 </template>
 <script setup >
 definePageMeta({

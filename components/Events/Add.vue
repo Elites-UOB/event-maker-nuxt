@@ -1,5 +1,5 @@
 <template>
-    <div flex="~" text="light " items="start">
+    <div flex="~" text="light " items="start" py="5em">
         <div flex="~ col gap-12" items="start">
             <!--  -->
             <div flex="~ col-2 gap-22">

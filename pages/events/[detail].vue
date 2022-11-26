@@ -18,6 +18,9 @@
                     <template #tab-3>
                         <EventsAdd />
                     </template>
+                    <template #tab-4>
+                        <EventsBarCode />
+                    </template>
                 </EventsTabs>
             </template>
         </NuxtLayout>
@@ -25,5 +28,5 @@
     </div>
 </template>
 <script setup>
-const tabs = ['Tab 1', 'Tab 2', 'Tab 3']
+const tabs = ['Tab 1', 'Tab 2', 'Tab 3', 'Tab 4']
 </script>
