@@ -22,7 +22,6 @@ export default defineNuxtConfig({
       provider: 'google',
       fonts: {
         "sans": ['Poppins:200,300,400,500,600,700,800,900'],
-        "arabic": ['Tajawal:200,300,400,500,600,700,800,900'],
       },
     },
     preflights: [
@@ -42,9 +41,6 @@ export default defineNuxtConfig({
             -moz-user-select: none;
             -ms-user-select: none;
             -o-user-select: none;
-          }
-          .font-arabic {
-            font-family: ${theme['fontFamily']['arabic']} !important;
           }
         `
       }

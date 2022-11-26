@@ -10,7 +10,7 @@
             <!-- container holds the profile information -->
             <NuxtLink v-if="isLoggedIn()" to="/auth/profile" border="2px solid white" flex="~" p=".3em">
                 <div>
-                    <img src="../public/fluent-emoji_man-beard-medium.png" alt="user image">
+                    <img :src="userPhoto" alt="user image">
                 </div>
                 <div flex="~" px=".5em">
                     <div>
@@ -39,6 +39,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import userPhoto from "../public/fluent-emoji_man-beard-medium.png"
 const arrowDownRef = ref(null)
 const sidebarRef = ref(null)
 
@@ -54,7 +55,7 @@ const toggleArrowDown = () => {
 const navs = [
     { name: 'Home', path: '/' },
     { name: 'My Events', path: '/events' },
-    { name: 'Services', path: '/service' },
+    { name: 'Services', path: '/' },
     { name: 'Manage Events', path: '/' }
 ]
 const { isLoggedIn, signOut, user } = useAuth()

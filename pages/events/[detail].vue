@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div><img src="/eve.png" w="full" h="68" class="relative" alt="event image">
+        <div><img src="~/public/eve.png" w="full" h="68" class="relative" alt="event image">
             <div class="absolute" w="full" h="64" left="0" top="24"
                 style="background: linear-gradient(180deg, rgba(40, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);">
             </div>
