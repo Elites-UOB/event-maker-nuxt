@@ -17,8 +17,8 @@
                 </div>
             </SwiperSlide>
         </Swiper>
-        <div p="20">
-            <ServiceIncomingEvents :eventNumber="20" flex="~" class="flex-wrap" />
+        <div p="20" grid="~ cols-4 ">
+            <ServiceIncomingEvents v-for="event in 10" :key="event" flex="~" class="flex-wrap" />
         </div>
     </div>
 </template>

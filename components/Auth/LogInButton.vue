@@ -1,5 +1,5 @@
 <template>
-    <button cursor="pointer" v-if="isLoggedIn()" @click="signOut" un-text="white center" bg="success" border="0 rounded-md" py="3" px="3"
+    <button cursor="pointer" v-if="isLoggedIn()" @click="signOut" bg="#1E1E1E" text="white center"  border="1 rounded-md light" py="3" px="3"
         w="40" mr="3">تسجيل خروج
     </button>
 </template>
