@@ -2,6 +2,7 @@
     <div w="full">
         <div v-if="!showConfirmemail"  class="center" P="4" flex="~ col  gap-4" >
             <!-- <h1 text="light 2xl center">{{ authState }}</h1> -->
+            <h1 text="light 4xl center " mb="12"> Event Maker</h1>
             <div v-if="authState == 'Singup'" flex="~ col gap-1"><label text="light sm opacity-60 " for="name">المعرف</label>
                 <input type="name" v-model="input.name" bg="#27292B" border="rounded-md light opacity-20"
                     focus="border-success" text="light" p="3" required />

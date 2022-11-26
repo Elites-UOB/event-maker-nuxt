@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div bg="#0B84FF">
+        <header bg="#0B84FF">
             <div flex="~" justify="between" h="525px" py="12" w="80%" m="auto" items="center">
                 <div grid="~ col-1 gap-11" justify="between">
                     <h1 text="5xl light" font="bold">Event Maker</h1>
@@ -17,7 +17,7 @@
                     </SwiperSlide>
                 </Swiper>
             </div>
-        </div>
+        </header>
         <div py="12" px="22">
             <ServiceCards />
             <div flex="~" justify="between" w="4/6  md:1.7/2" class="mx-auto" my="2">
