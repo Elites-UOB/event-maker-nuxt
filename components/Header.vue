@@ -28,9 +28,9 @@
             <AuthLogInButton />
         </div>
         <!-- HUMBERGER ICON -->
-        <Icon @click="toggleSidebar()" cursor="pointer" name="ic-baseline-menu" text="2xl" class="!md:hidden" />
+        <Icon @click="toggleSidebar()" cursor="pointer" name="ic-baseline-menu" text="light 2xl" class="!md:hidden" />
         <div ref="sidebarRef" w="full" h="full"
-            class="fixed top-0 bottom-0 right-0 left-0 z-3 block md:hidden hideSideBar"
+            class="fixed top-0  bottom-0 right-0 left-0 z-3 block md:hidden hideSideBar"
             transition="all ease-in-out 0.3s">
             <Sidebar :toggleSidebar="toggleSidebar" />
             <!--SIDEBAR -->

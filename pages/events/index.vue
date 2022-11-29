@@ -2,7 +2,7 @@
     <div text="light">
         <Swiper :modules="[SwiperAutoplay]" :slides-per-view="1" :loop="true" :autoplay="{ delay: 4000 }" :speed="1000">
             <SwiperSlide v-for="slide in 3" :key="slide" class="swiper-slide">
-                <img src="~/public/eve.png" w="full" h="68" class="" alt="event image">
+                <img src="/eve.png" w="full" h="68" class="" alt="event image">
                 <div class="absolute" z="1" w="full" h="full" left="0" top="24" flex="~ col" justify="center"
                     items="center"
                     style="background: linear-gradient(180deg, rgba(40, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);">
