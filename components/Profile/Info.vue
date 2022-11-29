@@ -14,15 +14,13 @@
                 <p w="full">{{ user.email }}</p>
             </section>
         </CostumeBox>
-
         <CostumeBox w="full" py="20">
             <h1 text="3xl">أحداثي</h1>
-            <div flex="~ cols-4">
-                <div   flex="~ col" justify="center"  items="center" border="1px solid #33333 rounded-xl" w="233px" h="281px" text="gray-500 xl">
-                    <Icon name="ic:outline-plus" w="25" h="25" font="bold"/>
-                    <h2>اضافة حدث</h2>
+            <div flex="~" justify="center" p="12">
+                <div grid="~ cols-4  gap-6">
+                    <EventsAdd />
+                    <ServiceIncomingEvents v-for="event in 20" :key="event" />
                 </div>
-                <ServiceIncomingEvents :eventNumber="3" flex="~" class="flex-wrap" />
             </div>
         </CostumeBox>
     </CostumeContainer>

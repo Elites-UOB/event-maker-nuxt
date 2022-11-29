@@ -1,119 +1,34 @@
 <template>
-    <div flex="~" text="light " items="start" py="5em">
-        <div flex="~ col gap-12" items="start">
-            <!--  -->
-            <div flex="~ col-2 gap-22">
-                <div class="opacity-40">
-                    الاضافة
-                </div>
-                <div flex="~ col-3 gap-8" justify="between" items="end">
-                    <div flex="~ col gap-1">
-                        <label>الايميل</label>
-                        <input type="name" bg="#27292B" border="rounded-md light  opacity-20" hover=" border-success"
-                            text="light" py="2" px="8" w="96" />
-                    </div>
-                    <div flex="~ col gap-1">
-                        <label>الصفة </label>
-                        <button @click="open = !open" bg="#27292B" border="rounded-md light opacity-20" text="light"
-                            hover=" border-success" py="2" px="12"> vip</button>
-                        <!-- <div v-if="open">not vip</div> -->
-                    </div>
-                    <div>
-                        <ButtonsBt contant="اضافة" />
-                    </div>
-                </div>
-            </div>
-            <!--  -->
-            <div flex="~ col-2 gap-22">
-                <div class="opacity-40">
-                    الادوات
-                </div>
-                <div flex="~ col-3 gap-8" justify="between" items="end">
-                    <div>
-                        <ButtonsBt contant="ارسال بريد" />
-                    </div>
-                    <div>
-                        <ButtonsBt contant="طباعة البطاقات" />
-                    </div>
-                    <div>
-                        <ButtonsBt contant="طباعة القائمة" />
-                    </div>
-                </div>
-            </div>
-            <!--  -->
-            <div flex="~ col-2 gap-22">
-                <div class="opacity-40">
-                    فريق العمل
-                </div>
-                <div class="text-light">
-                    <div class="" flex="~ col" justify="center" items="stert">
-                        <div class="opacity-40">
-                            <div flex="~ " justify="between" w="115">
-                                <div>الاسم</div>
-                                <div>الصفة</div>
-                                <div></div>
-                            </div>
-                        </div>
-                        <div flex="~ col gap-3" mt="2">
-                            <div v-for="user in 2" :key="user" flex="~ col-3 gap-35" items="center"
-                                border="b  light opacity-20" pb="2">
-                                <div>فلان ابن فلان </div>
-                                <div>اعلامي</div>
-                                <div flex="~ gap-2">
-                                    <button text="light md" bg="light" class="bg-opacity-20" py="2" px="3"
-                                        border="1 light opacity-10 rounded-xl" hover="bg-success">
-                                        <Icon name="material-symbols:print" text="2xl" />
-                                    </button>
-                                    <button text="light md" bg="light" class="bg-opacity-20" py="2" px="3"
-                                        border="1 light opacity-10 rounded-xl " hover="bg-error">
-                                        <Icon name="ant-design:user-delete-outlined" text="2xl" />
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--  -->
-            <div flex="~ col-2 gap-22">
-                <div class="opacity-40">
-                    المدعوين
-                </div>
-                <div class="text-light">
-                    <div class="" flex="~ col" justify="center" items="stert">
-                        <div class="opacity-40">
-                            <div flex="~ " justify="between" w="115">
-                                <div>الاسم</div>
-                                <div>الصفة</div>
-                                <div></div>
-                            </div>
-                        </div>
-                        <div flex="~ col gap-3" mt="2">
-                            <div v-for="user in 2" :key="user" flex="~ col-3 gap-35" items="center"
-                                border="b  light opacity-20" pb="2">
-                                <div>فلان ابن فلان </div>
-                                <div>حضور
-                                    <Icon name="material-symbols:edit" text="xl" />
-                                </div>
-                                <div flex="~ gap-2">
-                                    <button text="light md" bg="light" class="bg-opacity-20" py="2" px="3"
-                                        border="1 light opacity-10 rounded-xl" hover="bg-success">
-                                        <Icon name="material-symbols:print" text="2xl" />
-                                    </button>
-                                    <button text="light md" bg="light" class="bg-opacity-20" py="2" px="3"
-                                        border="1 light opacity-10 rounded-xl " hover="bg-error">
-                                        <Icon name="ant-design:user-delete-outlined" text="2xl" />
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div>
+        <div @click="open = !open" px="4" flex="~ col" justify="center" items="center"
+            border="1px solid #33333 rounded-xl" w="233px" h="281px" text="gray-500 xl">
+            <Icon name="ic:outline-plus" w="25" h="25" font="bold" />
+            <h2>اضافة حدث</h2>
         </div>
+        <Teleport to="body">
+            <Transition>
+                <div v-if="open" @click="open = false" flex="~" items-center justify-center
+                    class="fixed inset-0 bg-p  bg-opacity-80" backdrop-blur="sm" z="20">
+                    <div  overflow-y="auto" flex="~ col gap-8" items-center p="4" bg="dark opacity-30" text="light" w="2/3" 
+                        h="lg" border="1 dark rounded-15px" >
+                        ddddddddddddddd
+                    </div>
+                </div>
+            </Transition>
+        </Teleport>
     </div>
 </template>
 <script setup>
 const open = ref(false)
-const props = defineProps(['event'])
 </script>
+<style scoped>
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 0.25s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-    <nav flex="~ " justify="between" px="5 lg:10 xl:15" h="15" items="center" bg="#1E1E1E" font="sans" w="100%">
+    <nav flex="~ " justify="between" px="5 lg:10 xl:15" h="15" items="center"   bg="#1E1E1E" font="sans" w="100%">
         <NuxtLink to="/" un-text="3xl  white" font="black">EVENTO</NuxtLink>
         <!-- container holds the content in the middle and the end -->
         <div w="100%" h="100%" flex="~" justify="evenly" items="center" class="!hidden !md:flex">

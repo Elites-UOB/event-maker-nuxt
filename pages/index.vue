@@ -17,7 +17,6 @@
                                 <span text="sm lg:md" md="text-lg" >2202-12-01</span>
                                 <p hidden md="block text-lg" text="sm lg:md"  mb="3">كلية علوم الحاسوب - جامعة البصرة</p>
                             </div>
-
                         </div>
                         
                     </SwiperSlide>
@@ -38,7 +37,5 @@
         <Footer />
     </div>
 </template>
-
 <script setup>
 </script> 
-
