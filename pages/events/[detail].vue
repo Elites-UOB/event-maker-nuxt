@@ -8,7 +8,7 @@
         </div>
         <NuxtLayout name="two-section">
             <template #right>
-                <EventsTabs :labels="tabs">
+                <LazyEventsTabs :labels="tabs">
                     <template #tab-1>
                         <EventsDetail />
                     </template>
@@ -21,7 +21,7 @@
                     <template #tab-4>
                         <EventsBarCode />
                     </template>
-                </EventsTabs>
+                </LazyEventsTabs>
             </template>
         </NuxtLayout>
     </div>

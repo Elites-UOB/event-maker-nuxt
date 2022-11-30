@@ -1,6 +1,6 @@
 <template>
-    <nav flex="~ " justify="between" px="5 lg:10 xl:15" h="15" items="center"   bg="#1E1E1E" font="sans" w="100%">
-        <NuxtLink to="/" un-text="3xl  white" font="black">EVENTO</NuxtLink>
+    <nav flex="~ " justify="end md:between" px="5 lg:10 xl:15" h="15" items="center" bg="#1E1E1E" font="sans" w="100%">
+        <NuxtLink to="/" un-text="3xl  white" font="black" :class="DetailRoute ? 'hidden md:block' : 'block'" w="full md:1/12">EVENTO</NuxtLink>
         <!-- container holds the content in the middle and the end -->
         <div w="100%" h="100%" flex="~" justify="evenly" items="center" class="!hidden !md:flex">
             <ul flex="~ " gap="9" mx="2" justify="center" font="bold" text="md:sm lg:lg xl:xl" w="100%">
@@ -28,7 +28,7 @@
             <AuthLogInButton />
         </div>
         <!-- HUMBERGER ICON -->
-        <Icon @click="toggleSidebar()" cursor="pointer" name="ic-baseline-menu" text="light 2xl" class="!md:hidden" />
+        <Icon @click="toggleSidebar()" cursor="pointer" name="ic-baseline-menu" text="light 2xl" justify-self="start" w="1.8em" class="!md:hidden" />
         <div ref="sidebarRef" w="full" h="full"
             class="fixed top-0  bottom-0 right-0 left-0 z-3 block md:hidden hideSideBar"
             transition="all ease-in-out 0.3s">
@@ -41,6 +41,8 @@
 <script setup>
 const arrowDownRef = ref(null)
 const sidebarRef = ref(null)
+const route = useRoute();
+const DetailRoute = route.fullPath.includes('events/detail')
 
 
 const toggleSidebar = () => {

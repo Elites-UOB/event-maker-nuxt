@@ -1,7 +1,7 @@
 <template>
     <aside class="h-full w-full p-5 text-white bg-#111 font-black" transition="all ease-in-out .3s">
         <div h="10" w="full" flex="~" justify="end">
-            <Icon id="icon" name="ic-baseline-menu" text="2xl" @click="toggleSidebar()" cursor="pointer" mt="2"
+            <Icon id="icon" name="ic-baseline-menu" text="2xl" @click="toggleSidebar()" cursor="pointer"  ml="3"
                 class="text-white cursor-pointer hover:text-black hover:bg-white rounded-xl p"
                 hover="bg-white rounded-xl" />
         </div>

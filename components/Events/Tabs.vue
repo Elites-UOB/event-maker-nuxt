@@ -39,7 +39,7 @@
                     justify="center" items="center" />
                 <Icon name="ic-baseline-people-alt" v-if="index == 1" text="white" size="20" fill="none" flex="~"
                     justify="center" items="center" />
-                <Icon name="mdi-barcode-scan" v-if="index == 2" text="white" size="20" flex="~" justify="center"
+                <Icon name="ri:file-user-fill" v-if="index == 2" text="white" size="20" flex="~" justify="center"
                     items="center" />
                 <Icon name="mdi-barcode-scan" v-if="index == 3" text="white" size="20" flex="~" justify="center"
                     items="center" />

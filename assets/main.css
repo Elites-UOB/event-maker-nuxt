@@ -1,0 +1,47 @@
+.home-enter-active,
+.home-leave-active {
+    transition: opacity .5s;
+}
+
+.home-enter,
+.home-leave-active {
+    opacity: 0;
+}
+
+.page-enter-active,
+.page-leave-active {
+    transition: opacity 0.5s;
+}
+
+.page-enter,
+.page-leave-to {
+    opacity: 0;
+}
+
+.layout-enter-active,
+.layout-leave-active {
+    transition: opacity 0.5s;
+}
+
+.layout-enter,
+.layout-leave-active {
+    opacity: 0;
+}
+
+.my-layouts-enter-active,
+.my-layouts-leave-active {
+  transition: opacity 0.5s;
+}
+.my-layouts-enter,
+.my-layouts-leave-active {
+  opacity: 0;
+}
+
+.my-page-enter-active,
+.my-page-leave-active {
+  transition: opacity 0.5s;
+}
+.my-page-enter,
+.my-page-leave-to {
+  opacity: 0;
+}

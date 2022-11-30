@@ -1,5 +1,7 @@
 <template>
-    <div w="">
+    <div w="full" enter-active-class="  transform  duration-800 ease-out" enter-from-class=" opacity-0"
+            enter-to-class=" opacity-100" leave-active-class=" transform  " leave-from-class="opacity-100"
+            leave-to-class="opacity-0">
         <div bg="#0B84FF">
             <div h="400px" flex="~col " justify="cenetr" items="center" md="flex justify-between w-4/5" lg="by-12 m-auto w-4/5 " >
                 <div p="15" md=" items-start " flex="~ col gap-4 basis-2/3"  justify="cenetr" items="center" lg="justify-between gap-8  ">
