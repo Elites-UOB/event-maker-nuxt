@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     ['nuxt-icon'],'nuxt-swiper',
     ['@nuxtjs/supabase'],
+    '@kevinmarrec/nuxt-pwa',
   ],
   unocss: {
     // presets
@@ -71,4 +72,15 @@ export default defineNuxtConfig({
 
     css: ['typography', 'reset','grid'],
   },
+  pwa: {
+    manifest: {
+      name: "event",
+      lang: "en",
+      
+    },
+    fileName: 'icon.png',
+    workbox: {
+    enabled: true
+    }
+  }
 })
