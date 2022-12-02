@@ -28,11 +28,4 @@
 </template>
 <script setup>
 const tabs = ref(['Tab 1', 'Tab 2', 'Tab 3', 'Tab 4'])
-
-const loading = ref(true);
-
-const nuxtApp = useNuxtApp();
-nuxtApp.hook("page:finish", () => {
-  loading.value = false;
-});
 </script>
