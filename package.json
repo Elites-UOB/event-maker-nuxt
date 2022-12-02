@@ -14,10 +14,12 @@
     "nuxt": "3.0.0-rc.13"
   },
   "dependencies": {
+    "@nuxtjs/supabase": "^0.3.0",
     "@supabase/supabase-js": "^2.1.0",
     "@vuestic/nuxt": "^1.0.6",
     "json-server": "^0.17.1",
     "nuxt-icon": "^0.1.7",
-    "nuxt-swiper": "^0.1.6"
+    "nuxt-swiper": "^0.1.6",
+    "pinia": "^2.0.26"
   }
 }
