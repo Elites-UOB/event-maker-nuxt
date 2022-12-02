@@ -24,7 +24,7 @@
         </div>
         <div>
             <ServiceCards />
-            <div flex="~" justify="between" w="5/6  md:1.5/2" class="mx-auto font-arabic" my="2">
+            <div flex="~" justify="between" w="5/6  md:1.5/2" class="mx-auto" my="2">
                 <h1 text="white lg bold md:xl lg:2xl">أحداث قادمة</h1>
                 <h1 text="#background: #676767 lg md:xl lg:2xl">استكشف المزيد</h1>
             </div>

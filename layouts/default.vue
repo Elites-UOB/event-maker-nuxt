@@ -1,5 +1,5 @@
 <template>
-    <div flex="~ col " h="full" font="sans">
+    <div flex="~ col" h="full" font="sans">
         <Header />
         <div flex="grow">
             <slot />
