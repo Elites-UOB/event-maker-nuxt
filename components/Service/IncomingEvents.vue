@@ -22,7 +22,7 @@
 const props = defineProps(
     {
         eventNumber: {
-            type: Array,
+            type: Number,
             required: true,
         },
     }
