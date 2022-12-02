@@ -1,5 +1,5 @@
 <template>
-        <section  flex="~ col" justify="between" pb="3" border="1px solid #33333 rounded-xl" w="233px" h="281px"
+        <section flex="~ col" justify="between" pb="3" border="1px solid #33333 rounded-xl" w="233px" h="281px"
             class="text-right ">
             <img src="/eve.png" max-w="full" border="rounded-xl">
             <div  mt="3" px="2">

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div cursor="pointer">
         <div @click="open = !open" px="4" flex="~ col" justify="center" items="center"
             border="1px solid #33333 rounded-xl" w="233px" h="281px" text="gray-500 xl">
             <Icon name="ic:outline-plus" w="25" h="25" font="bold" />

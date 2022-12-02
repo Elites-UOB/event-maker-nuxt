@@ -3930,7 +3930,7 @@
     "@nuxt/kit" "^3.0.0-rc.11"
     "swiper" "^8.4.2"
 
-"nuxt@^3.0.0-rc.9", "nuxt@3.0.0-rc.13":
+"nuxt@^3.0.0-rc.13", "nuxt@^3.0.0-rc.9":
   "integrity" "sha512-iqAwrYzFuKK5HuJRa1XQ/K2WUYdOI7JjxYLWAJyAejzvUO/+Pj87fhqozzymlJxrdKM53UqBfur+KN+DE0nRzw=="
   "resolved" "https://registry.npmjs.org/nuxt/-/nuxt-3.0.0-rc.13.tgz"
   "version" "3.0.0-rc.13"
