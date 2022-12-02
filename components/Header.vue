@@ -13,9 +13,9 @@
                 <div>
                     <img src="../public/fluent-emoji_man-beard-medium.png" alt="user image">
                 </div>
-                <div flex="~" px=".5em">
+                <div flex="~" px=".5em" items="center">
                     <div>
-                        <h3 text="white">user name</h3>
+                        <p text="white">user name</p>
                     </div>
                     <div @click="toggleArrowDown()" cursor="pointer" ref="arrowDownRef" self="center">
                         <Icon class="" text="2xl" name="ic-baseline-keyboard-arrow-down" />
@@ -41,7 +41,7 @@
 <script setup>
 const arrowDownRef = ref(null)
 const sidebarRef = ref(null)
-const route = useRoute();
+const route = useRoute()
 const DetailRoute = route.fullPath.includes('events/detail')
 
 
@@ -57,11 +57,8 @@ const navs = [
     { name: 'Home', path: '/' },
     { name: 'Events', path: '/events' },
     { name: 'Services', path: '/service' },
-    // { name: 'Manage Events', path: '/' }
 ]
 const { isLoggedIn, signOut, user } = useAuth()
-
-
 </script>
 
 <style>
