@@ -20,7 +20,6 @@
                                 <p hidden md="block text-lg" text="sm lg:md"  mb="3">كلية علوم الحاسوب - جامعة البصرة</p>
                             </div>
                         </div>
-                        
                     </SwiperSlide>
                 </Swiper>
             </div>
@@ -39,5 +38,6 @@
         <Footer />
     </div>
 </template>
+
 <script setup>
 </script> 

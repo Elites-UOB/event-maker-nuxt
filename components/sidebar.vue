@@ -27,17 +27,13 @@ const navs = [
         link: '/'
     },
     {
-        name: 'My Events',
+        name: 'Events',
         link: '/events'
     },
     {
         name: 'Services',
         link: '/'
     },
-    {
-        name: 'Manage Events',
-        link: '/'
-    }
 ]
 
 

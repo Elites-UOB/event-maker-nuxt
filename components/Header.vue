@@ -55,7 +55,7 @@ const toggleArrowDown = () => {
 
 const navs = [
     { name: 'Home', path: '/' },
-    { name: 'Event', path: '/events' },
+    { name: 'Events', path: '/events' },
     { name: 'Services', path: '/service' },
     // { name: 'Manage Events', path: '/' }
 ]
