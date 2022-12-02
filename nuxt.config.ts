@@ -78,7 +78,6 @@ export default defineNuxtConfig({
       lang: "en",
       
     },
-    fileName: 'icon.png',
     workbox: {
     enabled: true
     }
