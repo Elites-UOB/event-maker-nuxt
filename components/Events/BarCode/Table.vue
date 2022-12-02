@@ -1,19 +1,14 @@
 <template>
     <table w="full">
-        <tr text="center" color="#333333" class="before:hidden">
+        <tr text="center" color="#676767" class="before:hidden">
             <th>الحضور</th>
             <th>الاسم</th>
             <th>الصفة</th>
             <th>الوقت</th>
         </tr>
-        <tr text="center" class="second-row">
+        <tr text="center" v-for="row in 3" :key="row">
             <td>فلان فلان الفلان</td>
             <td>vip</td>
-            <td>12:12</td>
-        </tr>
-        <tr text="center">
-            <td>فلان فلان الفلان</td>
-            <td>حضور</td>
             <td>12:12</td>
         </tr>
     </table>
