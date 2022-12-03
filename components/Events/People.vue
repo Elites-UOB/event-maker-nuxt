@@ -1,31 +1,25 @@
 <template>
-    <div flex pb="3">
-        <div class="opacity-40" text="light" w="40">
-            المتقدمين
-        </div>
-        <div class="text-light">
-            <div class="" flex="~ col" justify="center" items="stert">
-                <div class="opacity-40">
-                    <div flex="~ " justify="between" w="115">
-                        <div>الاسم</div>
-                        <div>الايميل</div>
-                        <div></div>
-                    </div>
-                </div>
-                <div flex="~ col gap-6" mt="6">
-                    <div v-for="user in 6" :key="user" flex="~ col-3 gap-35" items="center" border="b  light opacity-20"
-                        pb="2">
-                        <div>فلان ابن فلان </div>
-                        <div>ashleymcdaniel@nebulean.com</div>
-                        <div>
-                            <button text="light md" bg="dark" class="bg-opacity-20" py="3" px="6"
-                                border="1 light opacity-10 rounded-r-xl" hover="bg-success">قبول</button>
-                            <button text="light md" bg="dark" class="bg-opacity-20" py="3" px="6"
-                                border="1 light opacity-10 rounded-l-xl " hover="bg-error">رفض</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <table w="full">
+        <thead w="full" text="xs sm:sm md:md" relative> 
+            <tr text="#676767" w="full">
+                <th text="right" display="none md:block">المتقدمين</th>
+                <th text="right">الاسم</th>
+                <th text="right">الايميل</th>
+            </tr>
+        </thead>
+        <tbody class="relative" w="full" text="10px sm:sm md:md xl:lg">
+            <tr v-for="person in 5" :key="person" class="table-row relative first:before:hidden" w="full" h="60px"
+                my="3em" text="white right">
+                <td display="none md:block"></td>
+                <td text="right" mx="5">فلان ابن فلان</td>
+                <td text="right" mx="5">helloworld@gmail.com</td>
+                <td flex justify="center" items="center">
+                    <button text="light md" bg="dark" class="bg-opacity-20" py="2 md:3" px="3 sm:4 md:6"
+                        border="1 light opacity-10 rounded-r-xl" hover="bg-success">قبول</button>
+                    <button text="light md" bg="dark" class="bg-opacity-20" py="2 md:3" px="3 sm:4 md:6"
+                        border="1 light opacity-10 rounded-l-xl " hover="bg-error">رفض</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </template>

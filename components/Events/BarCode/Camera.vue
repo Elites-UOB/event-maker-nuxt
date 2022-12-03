@@ -4,7 +4,7 @@
             <qrcode-vue :value="inputValue" :size="250" level="H"  @click="randomColor()"/>
             <input type="text" v-model="inputValue" class="w-35 h-5 text-white bg-transparent outline-none border-none caret-transparent" placeholder="رقم البطاقة يتولد هنا" tabindex="-1" :ref="inputValue" />
         </CostumeBox>
-        <CostumeBox color="#676767">ماسح البطاقات</CostumeBox>
+        <CostumeBox color="#676767" display="none md:block">ماسح البطاقات</CostumeBox>
     </CostumeContainer>
 </template>
 

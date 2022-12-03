@@ -14,9 +14,10 @@
                     </div>
                     <div flex="~ col gap-1">
                         <label>الصفة </label>
-                        <button @click="open = !open" bg="#27292B" border="rounded-md light opacity-20" text="light"
-                            hover=" border-success" py="2" px="12"> vip</button>
-                        <!-- <div v-if="open">not vip</div> -->
+                        <select class="select-selected" w="25" bg="#212121" text="white" py="1.5" border="1px solid #212121 rounded-md">
+                            <option value="حضور" text="حضور">حضور</option>
+                            <option value="vip" text="vip" flex="~" justify="center" items="center" w="full">vip</option>
+                        </select>
                     </div>
                     <div>
                         <ButtonsBt contant="اضافة" />
@@ -60,11 +61,11 @@
                                 <div>فلان ابن فلان </div>
                                 <div>اعلامي</div>
                                 <div flex="~ gap-2">
-                                    <button text="light md" bg="light" class="bg-opacity-20" py="2" px="3"
+                                    <button text="light md" bg="light" class="bg-opacity-20" py="2" px="3" title="طباعة"
                                         border="1 light opacity-10 rounded-xl" hover="bg-success">
                                         <Icon name="material-symbols:print" text="2xl" />
                                     </button>
-                                    <button text="light md" bg="light" class="bg-opacity-20" py="2" px="3"
+                                    <button text="light md" bg="light" class="bg-opacity-20" py="2" px="3" title="حذف"
                                         border="1 light opacity-10 rounded-xl " hover="bg-error">
                                         <Icon name="ant-design:user-delete-outlined" text="2xl" />
                                     </button>
@@ -96,11 +97,11 @@
                                     <Icon name="material-symbols:edit" text="xl" />
                                 </div>
                                 <div flex="~ gap-2">
-                                    <button text="light md" bg="light" class="bg-opacity-20" py="2" px="3"
+                                    <button text="light md" bg="light" class="bg-opacity-20" py="2" px="3" title="طباعة"
                                         border="1 light opacity-10 rounded-xl" hover="bg-success">
                                         <Icon name="material-symbols:print" text="2xl" />
                                     </button>
-                                    <button text="light md" bg="light" class="bg-opacity-20" py="2" px="3"
+                                    <button text="light md" bg="light" class="bg-opacity-20" py="2" px="3" title="حذف"
                                         border="1 light opacity-10 rounded-xl " hover="bg-error">
                                         <Icon name="ant-design:user-delete-outlined" text="2xl" />
                                     </button>
@@ -114,6 +115,5 @@
     </div>
 </template>
 <script setup>
-const open = ref(false)
 const props = defineProps(['event'])
 </script>
