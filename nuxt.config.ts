@@ -76,10 +76,9 @@ export default defineNuxtConfig({
     manifest: {
       name: "event",
       lang: "en",
-      
     },
     workbox: {
     enabled: true
     }
-  }
+  },
 })
