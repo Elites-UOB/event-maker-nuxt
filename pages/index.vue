@@ -8,7 +8,7 @@
                     <button py="2" w="3/5" border="0 rounded-md" text="black bold" font="bold" md="py-3" lg="py-4 "> ابدا الان</button>
                 </div>
                 <Swiper :modules="[SwiperAutoplay]" :loop="true" :speed="1000" :autoplay="{ delay: 3000, }"
-                    flex="~ gap-2 basis-2/3" lg=" items-center "  dir="ltr" text="white"  >
+                    flex="~ gap-2 basis-2/3" lg=" items-center "  dir="ltr" text="white" cursor="grabbing">
                     <SwiperSlide v-for="slide in 5" :key="slide" >
                         <div flex="~ gap-4" px="6" items="end" justify="center" md="grid gird-cols-1 p-3 justify-between ">
                             <div bg="#D9D9D9" alt="calendar" w="30 md:40 lg:180px" h="100px md:40 lg:180px" ></div>

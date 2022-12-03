@@ -15,7 +15,7 @@
                 </div>
                 <div flex="~" px=".5em" items="center">
                     <div>
-                        <p text="white">user name</p>
+                        <p text="white" w="20">user name</p>
                     </div>
                     <div @click="toggleArrowDown()" cursor="pointer" ref="arrowDownRef" self="center">
                         <Icon class="" text="2xl" name="ic-baseline-keyboard-arrow-down" />
