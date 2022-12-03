@@ -1,16 +1,19 @@
 <template>
-    <table w="full">
-        <tr text="center" color="#676767" class="before:hidden">
-            <th>الحضور</th>
-            <th>الاسم</th>
-            <th>الصفة</th>
-            <th>الوقت</th>
-        </tr>
-        <tr text="center" v-for="row in 3" :key="row">
-            <td>فلان فلان الفلان</td>
-            <td>vip</td>
-            <td>12:12</td>
-        </tr>
+    <table w="full md:10/12" grid="~ 3-cols">
+        <thead w="full">
+            <tr text="right" color="#676767">
+                <th w="full">الاسم</th>
+                <th w="full">الصفة</th>
+                <th w="full">الوقت</th>
+            </tr>
+        </thead>
+        <tbody w="full">
+            <tr text="right" v-for="row in 3" :key="row">
+                <td w="full" text="xs md:sm lg:md">فلان فلان الفلان</td>
+                <td w="full" ml="5" class="vip">vip</td>
+                <td w="full">12:12</td>
+            </tr>
+        </tbody>
     </table>
 </template>
 
@@ -21,24 +24,8 @@ th {
     padding: 1.5em;
 }
 
-/* nest absolute pseudo divider for all the children except the first one  */
-
-table tr:not(:first-child) {
-    position: relative;
+.vip {
+    padding-left: 2.5em;
 }
 
-table:first-child::before {
-    display: none;
-    opacity: 0;
-}
-
-table tr:not(table:first-child)::before {
-    content: "";
-    position: absolute;
-    top: 4em;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #333;
-}
 </style>

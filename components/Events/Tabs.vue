@@ -2,7 +2,7 @@
     <section flex="~ col">
         <!-- Contents -->
         <CostumeBox>
-            <div v-for="item in labels.length" :key="'tab' + item" class="bg-tab" p="x-9"
+            <div v-for="item in labels.length" :key="'tab' + item" class="bg-tab" p=" md:x-9"
                 border="rounded-rt-lg rounded-b-lg">
                 <ClientOnly>
                     <Transition enter-active-class="  transform  duration-800 ease-out" enter-from-class=" opacity-0"

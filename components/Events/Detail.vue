@@ -61,13 +61,14 @@
                         <div mt="2">
                             <!-- هاي الدكمه موتتني عدلها dropdown  -->
                             <va-button-dropdown preset="secondary" border="rounded 1 opacity-20  success" label="خاص"
-                                class="mr-2 mb-2">عام</va-button-dropdown>
+                                class="mr-2 mb-2"> خاص </va-button-dropdown>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--  -->
         </div>
     </div>
 </template>
 
+<script setup>
+</script>
