@@ -42,7 +42,7 @@
                 </div>
             </div>
             <!--  -->
-            <div flex="~ col-2 gap-10">
+            <div flex="~ col-2">
                 <div class="opacity-40">
                     رابط الحدث
                 </div>

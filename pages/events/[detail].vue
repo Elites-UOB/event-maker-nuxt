@@ -16,7 +16,7 @@
                         <EventsPeople />
                     </template>
                     <template #tab-3>
-                        <EventsDetail2 />
+                        <EventsAbout />
                     </template>
                     <template #tab-4>
                         <EventsBarCode />
