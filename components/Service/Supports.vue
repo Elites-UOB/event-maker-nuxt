@@ -1,6 +1,6 @@
 <template>
     <CostumeContainer flex="~" class="flex-wrap ">
-        <h1 p="7 xl:20" text="8 light" w="full" mx="auto">الداعمين</h1>
+        <h1 p="7 xl:5" text="8 light" w="full" mx="auto">الداعمين</h1>
         <section grid="~"  gap="8"  mx="auto" md="flex gap-14" lg="gap-20" w="9/12" justify="center" items="center"
             class="lg:grid-cols-4 grid-cols-2">
             <div flex="~ col" justify="center" items="center" gap="6">

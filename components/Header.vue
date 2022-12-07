@@ -5,7 +5,7 @@
         <div w="100%" h="100%" flex="~" justify="evenly" items="center" class="!hidden !md:flex">
             <ul flex="~ " gap="9" mx="2" justify="center" font="bold" text="md:sm lg:lg xl:xl" w="100%">
                 <NuxtLink v-for="nav in navs" :key="nav.name" :to="nav.path" cursor="pointer" un-text="light"
-                    hover="underline">{{ nav.name }}</NuxtLink>
+                    hover="text-[#0B84FF]">{{ nav.name }}</NuxtLink>
             </ul>
             <!-- container holds the profile information -->
             <NuxtLink v-if="isLoggedIn()" to="/auth/profile" border="1 solid white rounded-lg" flex="~" w="59" p=".2em"
@@ -24,7 +24,7 @@
             </NuxtLink>
             <!-- JOIN BUTTON -->
             <NuxtLink to="/auth/sign" :class="isLoggedIn() ? 'hidden' : 'visible'" un-text="white center" 
-                border="1 rounded-md" py="3" px="4" w="22" mr="3">انضمام</NuxtLink>
+                border="1 rounded-md" py="3" px="4" w="22" mr="3" hover="border-[#0B84FF]">انضمام</NuxtLink>
             <AuthLogInButton />
         </div>
         <!-- HUMBERGER ICON -->
