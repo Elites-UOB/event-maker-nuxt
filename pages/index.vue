@@ -26,7 +26,7 @@
             <ServiceCards />
             <div flex="~" justify="between" w="5/6  md:1.5/2" class="mx-auto" my="2">
                 <h1 text="white lg bold md:xl lg:2xl">أحداث قادمة</h1>
-                <NuxtLink to="/events" text="#background: #676767 lg md:xl lg:2xl">استكشف المزيد</NuxtLink>
+                <NuxtLink to="/events" un-text="light lg md:xl lg:2xl" >استكشف المزيد</NuxtLink>
             </div>
             <div grid="~ col-1 gap-4 sm:cols-2  md:cols-3 md:gap-4 lg:cols-4" w="fit" py="10"  justify="center"  items="center" m="auto" >
                 <ServiceIncomingEvents v-for="event in 4" :key="event" />
