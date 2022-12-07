@@ -7,7 +7,16 @@
         </div>
         <div flex="~ col" gap="10" items="center" justify="center" h="80%">
             <NuxtLink v-for="nav in navs" :to="nav.link" :key="nav.name" @click="toggleSidebar()">
-                <section text="white" hover="underline">{{ nav.name }}</section>
+                <section text="white">{{ nav.name }}</section>
+            </NuxtLink>
+            <NuxtLink to="/auth/sign" :class="isLoggedIn() ? 'hidden' : 'visible'" @click="toggleSidebar()" >
+                <section text="white"> Log In </section>
+            </NuxtLink>
+            <div v-if="isLoggedIn()" @click="signOut">
+                <section text="white"> Log Out </section>
+            </div>
+            <NuxtLink to="/auth/profile" v-if="isLoggedIn()" @click="toggleSidebar()">
+                <section text="white">Manage Event </section>
             </NuxtLink>
         </div>
     </aside>
@@ -20,6 +29,7 @@ const props = defineProps({
         required: true
     }
 })
+const { isLoggedIn, signOut, user } = useAuth()
 
 const navs = [
     {
@@ -27,17 +37,10 @@ const navs = [
         link: '/'
     },
     {
-        name: 'My Events',
+        name: 'Event',
         link: '/events'
     },
-    {
-        name: 'Services',
-        link: '/'
-    },
-    {
-        name: 'Manage Events',
-        link: '/'
-    }
+
 ]
 
 
