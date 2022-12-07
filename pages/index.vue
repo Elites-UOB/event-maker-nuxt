@@ -4,7 +4,7 @@
             <div h="400px" flex="~col " justify="cenetr" items="center" md="flex justify-between w-4/5" lg="by-12 m-auto w-4/5 " >
                 <div p="15" md=" items-start " flex="~ col gap-4 basis-2/3"  justify="cenetr" items="center" lg="justify-between gap-8  ">
                     <h1 text="2xl light" font="bold" md="text-4xl" lg="5xl">Event Maker</h1>
-                    <span text="lg  gray-300" lg="2xl">ادارة حضور الاحداث لم تكن بهذه السهولة من قبل!</span>
+                    <span text="lg  gray-300 md:2xl" >ادارة حضور الاحداث لم تكن بهذه السهولة من قبل!</span>
                     <button py="2" w="3/5" border="0 rounded-md" text="black bold" font="bold" md="py-3" lg="py-4 "> ابدا الان</button>
                 </div>
                 <Swiper :modules="[SwiperAutoplay]" :loop="true" :speed="1000" :autoplay="{ delay: 3000, }"

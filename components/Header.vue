@@ -4,8 +4,8 @@
         <!-- container holds the content in the middle and the end -->
         <div w="100%" h="100%" flex="~" justify="evenly" items="center" class="!hidden !md:flex">
             <ul flex="~ " gap="9" mx="2" justify="center" font="bold" text="md:sm lg:lg xl:xl" w="100%">
-                <NuxtLink v-for="nav in navs" :key="nav.name" :to="nav.path" cursor="pointer" un-text="light"
-                    hover="underline">{{ nav.name }}</NuxtLink>
+                <NuxtLink v-for="nav in navs" :key="nav.name" :to="nav.path" cursor="pointer" un-text=" lg gray-300"
+                    hover="text-light">{{ nav.name }}</NuxtLink>
             </ul>
             <!-- container holds the profile information -->
             <NuxtLink v-if="isLoggedIn()" to="/auth/profile" border="1 solid white rounded-lg" flex="~" w="59" p=".2em"
