@@ -17,7 +17,7 @@
         <CostumeBox w="full" py="20">
             <h1 text="3xl">أحداثي</h1>
             <div flex="~" justify="center" p="12">
-                <div grid="~ cols-4  gap-6">
+                <div flex="~  wrap gap-4" h="fit-content" justify="center">
                     <EventsAdd />
                     <ServiceIncomingEvents v-for="event in 20" :key="event" />
                 </div>

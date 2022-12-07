@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div><img src="/eve.png" w="full" h="68" class="relative" alt="event image">
+        <div><img src="/eve.png" w="full" h="68" class="relative" alt="event image"/>
             <div class="absolute" w="full" h="59" left="0" top="24"
                 style="background: linear-gradient(180deg, rgba(40, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);">
             </div>
@@ -8,7 +8,7 @@
         </div>
         <NuxtLayout name="two-section">
             <template #right>
-                <EventsTabs :labels="tabs">
+                <LazyEventsTabs :labels="tabs">
                     <template #tab-1>
                         <EventsDetail />
                     </template>
@@ -16,16 +16,16 @@
                         <EventsPeople />
                     </template>
                     <template #tab-3>
-                        <EventsDetail2 />
+                        <EventsAbout />
                     </template>
                     <template #tab-4>
                         <EventsBarCode />
                     </template>
-                </EventsTabs>
+                </LazyEventsTabs>
             </template>
         </NuxtLayout>
     </div>
 </template>
 <script setup>
-const tabs = ['Tab 1', 'Tab 2', 'Tab 3', 'Tab 4']
+const tabs = ref(['Tab 1', 'Tab 2', 'Tab 3', 'Tab 4'])
 </script>

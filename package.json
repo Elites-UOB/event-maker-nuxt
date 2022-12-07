@@ -8,10 +8,10 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@unocss/nuxt": "^0.46.4",
+    "@unocss/nuxt": "^0.46.5",
     "@vueuse/core": "^9.5.0",
     "@vueuse/nuxt": "^9.5.0",
-    "nuxt": "3.0.0-rc.13"
+    "nuxt": "^3.0.0-rc.13"
   },
   "dependencies": {
     "@nuxtjs/supabase": "^0.3.0",
@@ -20,6 +20,7 @@
     "json-server": "^0.17.1",
     "nuxt-icon": "^0.1.7",
     "nuxt-swiper": "^0.1.6",
-    "pinia": "^2.0.26"
+    "pinia": "^2.0.26",
+    "qrcode.vue": "^3.3.3"
   }
 }
