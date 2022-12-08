@@ -78,17 +78,7 @@ export default defineNuxtConfig({
       lang: "en",
     },
     workbox: {
-    enabled: true
-    }
-  },
-  pwa: {
-    
-    manifest: {
-      name: "event",
-      lang: "en",
-    },
-    workbox: {
-       enabled: true
+    //enabled: true
     }
   },
 })
