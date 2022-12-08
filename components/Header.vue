@@ -8,7 +8,7 @@
                     hover="text-[#0B84FF]">{{ nav.name }}</NuxtLink>
             </ul>
             <!-- container holds the profile information -->
-            <NuxtLink v-if="isLoggedIn()" to="/auth/profile" border="1 solid white rounded-lg" flex="~" w="59" p=".2em"
+            <NuxtLink v-if="isLoggedIn()" to="/auth/profile"  border="1 rounded-md light" flex="~" w="59" 
                 justify="between" items="center">
                 <div>
                     <img src="../public/fluent-emoji_man-beard-medium.png" alt="user image">
@@ -44,6 +44,11 @@ const sidebarRef = ref(null)
 const route = useRoute()
 const DetailRoute = route.fullPath.includes('events/detail')
 
+const navs = ref([
+    { name: 'Home', path: '/' },
+    { name: 'Events', path: '/events' },
+    { name: 'Services', path: '/service' },
+])
 
 const toggleSidebar = () => {
     sidebarRef.value.classList.toggle('hideSideBar')
@@ -53,11 +58,6 @@ const toggleArrowDown = () => {
     arrowDownRef.value.classList.toggle('rotate')
 }
 
-const navs = [
-    { name: 'Home', path: '/' },
-    { name: 'Events', path: '/events' },
-    { name: 'Services', path: '/service' },
-]
 const { isLoggedIn, signOut, user } = useAuth()
 </script>
 
