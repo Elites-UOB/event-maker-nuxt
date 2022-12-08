@@ -57,9 +57,9 @@
                     <div>
                         <h1 class="opacity-40 text-sm">نوع الرابط</h1>
                         <div mt="2">
-                            <select bg="blue" border="rounded 1 opacity-20 success" class="mr-2 mb-2 text-white" px="4" py="1" >
-                                <option selected value="خاص" hover="white">خاص</option>
-                                <option value="عام" hover="white">عام</option>
+                            <select bg="transparent" border="rounded 1 opacity-20 success" class="mr-2 mb-2 text-white" px="4" py="1" >
+                                <option selected bg="black" value="خاص" hover="white">خاص</option>
+                                <option value="عام" bg="black" hover="white">عام</option>
                             </select>
                         </div>
                     </div>

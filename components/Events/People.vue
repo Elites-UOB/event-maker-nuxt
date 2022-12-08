@@ -9,7 +9,7 @@
         </thead>
         <tbody class="relative" w="full">
             <tr v-for="person in People" :key="person" class="table-row relative first:before:hidden" w="full" h="60px"
-                flex="~ gap-4" border-b="1 solid #676767" my="3em" text="white right">
+                flex="~ gap-4" border-b="1 solid #676767 opacity" my="3em" text="white right">
                 <td display="none md:block"></td>
                 <td text="right 12px sm:sm md:md lg:lg xl:xl">{{ person.name }}</td>
                 <td text="right 12px sm:sm md:md lg:lg xl:xl">{{ person.email }}</td>
