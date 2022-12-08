@@ -10,7 +10,7 @@
             <template #right>
                 <LazyEventsTabs :labels="tabs">
                     <template #tab-1>
-                        <EventsDetail />
+                        <EventsBio />
                     </template>
                     <template #tab-2>
                         <EventsPeople />
