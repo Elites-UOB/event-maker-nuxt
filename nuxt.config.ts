@@ -73,6 +73,15 @@ export default defineNuxtConfig({
     css: ['typography', 'reset','grid'],
   },
   pwa: {
+    manifest: {
+      name: "event",
+      lang: "en",
+    },
+    workbox: {
+    enabled: true
+    }
+  },
+  pwa: {
     
     manifest: {
       name: "event",
