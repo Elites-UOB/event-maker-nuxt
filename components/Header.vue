@@ -8,7 +8,7 @@
                     hover="underline">{{ nav.name }}</NuxtLink>
             </ul>
             <!-- container holds the profile information -->
-            <NuxtLink v-if="isLoggedIn()" to="/auth/profile" border="1 solid white rounded-lg" flex="~" w="59" p=".2em"
+            <NuxtLink v-if="isLoggedIn()" to="/auth/profile"  border="1 rounded-md light" flex="~" w="59" 
                 justify="between" items="center">
                 <div>
                     <img src="../public/fluent-emoji_man-beard-medium.png" alt="user image">
