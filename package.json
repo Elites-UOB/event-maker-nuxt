@@ -15,9 +15,7 @@
     "nuxt": "^3.0.0-rc.13"
   },
   "dependencies": {
-    "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/supabase": "^0.3.0",
-    "@supabase/supabase-js": "^2.1.0",
     "@vuestic/nuxt": "^1.0.6",
     "json-server": "^0.17.1",
     "nuxt-icon": "^0.1.7",
