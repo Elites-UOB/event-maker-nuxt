@@ -44,6 +44,11 @@ const sidebarRef = ref(null)
 const route = useRoute()
 const DetailRoute = route.fullPath.includes('events/detail')
 
+const navs = ref([
+    { name: 'Home', path: '/' },
+    { name: 'Events', path: '/events' },
+    { name: 'Services', path: '/service' },
+])
 
 const toggleSidebar = () => {
     sidebarRef.value.classList.toggle('hideSideBar')
@@ -53,11 +58,6 @@ const toggleArrowDown = () => {
     arrowDownRef.value.classList.toggle('rotate')
 }
 
-const navs = [
-    { name: 'Home', path: '/' },
-    { name: 'Events', path: '/events' },
-    { name: 'Services', path: '/service' },
-]
 const { isLoggedIn, signOut, user } = useAuth()
 </script>
 

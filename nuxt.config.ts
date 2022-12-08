@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     ['nuxt-icon'],'nuxt-swiper',
     ['@nuxtjs/supabase'],
+    '@nuxtjs/pwa',
   ],
   unocss: {
     // presets
@@ -30,7 +31,7 @@ export default defineNuxtConfig({
       {
          getCSS: ({ theme }) => `
           * {
-            font-family: ${theme['fontFamily']['sans']};
+            font-family: ${theme['fontFamily']['arabic']};
             box-sizing: border-box;
           }
           body {
