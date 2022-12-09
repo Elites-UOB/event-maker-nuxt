@@ -4,7 +4,7 @@
         <!-- container holds the content in the middle and the end -->
         <div w="100%" h="100%" flex="~" justify="evenly" items="center" class="!hidden !md:flex">
             <ul flex="~ " gap="9" mx="2" justify="center" font="bold" text="md:sm lg:lg xl:xl" w="100%">
-                <NuxtLink v-for="nav in navs" :key="nav.name" :to="nav.path" cursor="pointer" un-text="light"
+                <NuxtLink v-for="nav in navs" :key="nav.name" :to="nav.path" cursor="pointer" un-text="light lg"
                     hover="text-[#0B84FF]">{{ nav.name }}</NuxtLink>
             </ul>
             <!-- container holds the profile information -->
@@ -45,9 +45,8 @@ const route = useRoute()
 const DetailRoute = route.fullPath.includes('events/detail')
 
 const navs = ref([
-    { name: 'Home', path: '/' },
-    { name: 'Events', path: '/events' },
-    { name: 'Services', path: '/service' },
+    { name: 'الصفحة الرئيسية', path: '/' },
+    { name: 'الاحداث ', path: '/events' },
 ])
 
 const toggleSidebar = () => {
