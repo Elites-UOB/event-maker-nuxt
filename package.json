@@ -12,7 +12,7 @@
     "@unocss/nuxt": "^0.46.4",
     "@vueuse/core": "^9.5.0",
     "@vueuse/nuxt": "^9.5.0",
-    "nuxt": "^3.0.0-rc.13"
+    "nuxt": "^3.0.0-rc.14"
   },
   "dependencies": {
     "@nuxtjs/supabase": "^0.3.0",
