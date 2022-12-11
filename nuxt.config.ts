@@ -66,16 +66,12 @@ export default defineNuxtConfig({
     },
   },
   vuestic: {
-    // config: {
-    //   // ...
-    // },
-
     css: ['typography', 'reset','grid'],
   },
   pwa: {
     manifest: {
       name: "event",
-      lang: "en",
+      lang: "ar",
     },
     workbox: {
     //enabled: true
