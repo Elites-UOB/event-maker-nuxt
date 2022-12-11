@@ -25,16 +25,16 @@
                             الحساب </div>
                         <div flex="~ col gap-2">
                             <h2 text="gray-100"> البريد الالكتروني </h2>
-                            <input type="email" v-model="input.email" bg="#27292B" border="rounded-md light opacity-20"
-                                focus="border-success" text="light" p="3" required />
+                            <!-- <input type="email" v-model="input.email" bg="#27292B" border="rounded-md light opacity-20"
+                                focus="border-success" text="light" p="3" required /> -->
                             <h2 text="gray-100"> كلمة المرور </h2>
-                            <input type="password" v-model="input.password" bg="#27292B"
+                            <!-- <input type="password" v-model="input.password" bg="#27292B"
                                 border="rounded-md light opacity-20" focus="border-success" text="light" p="3"
-                                required />
+                                required /> -->
                             <h2 text="gray-100"> أعادة كلمة المرور </h2>
-                            <input type="password" v-model="input.password" bg="#27292B"
+                            <!-- <input type="password" v-model="input.password" bg="#27292B"
                                 border="rounded-md light opacity-20" focus="border-success" text="light" p="3"
-                                required />
+                                required /> -->
                         </div>
                     </div>
                 </div>
