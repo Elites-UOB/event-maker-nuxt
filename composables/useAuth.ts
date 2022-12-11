@@ -33,10 +33,13 @@ const useAuth = () => {
         const { user: u, error } = await supabase.auth.signInWithPassword({
                 email,
                 password,
+            },{
+                redirectTo: `${window.location.origin}/auth/profile`,
             })
         if (error) throw error
         const toast = useToastr()
         toast.success('تم تسجيل الدخول بنجاح')
+        
         return u
     }
 

@@ -3,12 +3,12 @@
         <div bg="#0B84FF">
             <div h="400px" flex="~col " justify="cenetr" items="center" md="flex justify-between w-4/5"
                 lg="by-12 m-auto w-4/5 ">
-                <div p="15" md=" items-start " flex="~ col gap-4 basis-2/3" justify="cenetr" items="center"
+                <div p="15" md=" items-start " flex="~ col gap-6 basis-2/3" justify="cenetr" items="center"
                     lg="justify-between gap-8  ">
                     <h1 text="2xl light" font="bold" md="text-4xl" lg="5xl">Event Maker</h1>
-                    <span text="lg  gray-300 lg:2xl" lg="2xl">ادارة حضور الاحداث لم تكن بهذه السهولة من قبل!</span>
-                    <button py="2" w="3/5" border="0 rounded-md" text="black bold" font="bold" md="py-3" lg="py-4 ">
-                        ابدا الان</button>
+                    <span text="md center  gray-300 lg:xl" >ادارة حضور الاحداث لم تكن بهذه السهولة من قبل!</span>
+                    <NuxtLink to="/auth/sign" py="3" transition="all ease-in-out 1s"  w="3/5" border="0 rounded-md " hover="shadow-xl"   bg="white"  un-text="black center bold" font="bold" md="py-3" lg="py-4 ">
+                        ابدا الان</NuxtLink>
                 </div>
                 <Swiper :modules="[SwiperAutoplay]" :loop="true" :speed="1000" :autoplay="{ delay: 3000, }"
                     flex="~ gap-2 basis-2/3" lg=" items-center " dir="ltr" text="white" cursor="grabbing">

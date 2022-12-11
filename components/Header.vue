@@ -4,28 +4,29 @@
         <!-- container holds the content in the middle and the end -->
         <div w="100%" h="100%" flex="~" justify="evenly" items="center" class="!hidden !md:flex">
             <ul flex="~ " gap="9" mx="2" justify="center" font="bold" text="md:sm lg:lg xl:xl" w="100%">
-                <NuxtLink v-for="nav in navs" :key="nav.name" :to="nav.path" cursor="pointer" un-text="light lg"
+                <NuxtLink v-for="nav in navs" :key="nav.name" :to="nav.path" transition="all ease-in-out 1s" cursor="pointer" un-text="light lg"
                     hover="text-[#0B84FF]">{{ nav.name }}</NuxtLink>
             </ul>
             <!-- container holds the profile information -->
-            <NuxtLink v-if="isLoggedIn()" to="/auth/profile"  border="1 rounded-md light" flex="~" w="59" 
-                justify="between" items="center">
+            <NuxtLink v-if="isLoggedIn()" to="/auth/profile"  flex="~"  
+                justify="center" items="center" >
                 <div>
                     <img src="../public/fluent-emoji_man-beard-medium.png" alt="user image">
                 </div>
-                <div flex="~" px=".5em" items="center">
-                    <div>
+                <div flex="~" pl="1em" items="center">
+                    <!-- <div>
                         <p text="white sm" w="20">user name</p>
-                    </div>
+                    </div> -->
                     <div @click="toggleArrowDown()" cursor="pointer" ref="arrowDownRef" self="center">
-                        <Icon class="" text="2xl" name="ic-baseline-keyboard-arrow-down" />
+                        <Icon class="" text="2xl light" name="ic-baseline-keyboard-arrow-down" />
                     </div>
                 </div>
             </NuxtLink>
+            <AuthLogInButton />
             <!-- JOIN BUTTON -->
             <NuxtLink to="/auth/sign" :class="isLoggedIn() ? 'hidden' : 'visible'" un-text="white center" 
                 border="1 rounded-md" py="3" px="4" w="22" mr="3" hover="border-[#0B84FF]">انضمام</NuxtLink>
-            <AuthLogInButton />
+            
         </div>
         <!-- HUMBERGER ICON -->
         <Icon @click="toggleSidebar()" cursor="pointer" name="ic-baseline-menu" text="light 2xl" justify-self="start" w="1.8em" class="!md:hidden" />
