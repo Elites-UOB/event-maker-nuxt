@@ -7,7 +7,7 @@
                     lg="justify-between gap-8  ">
                     <h1 text="2xl light" font="bold" md="text-4xl" lg="5xl">Event Maker</h1>
                     <span text="md center  gray-300 lg:xl" >ادارة حضور الاحداث لم تكن بهذه السهولة من قبل!</span>
-                    <NuxtLink to="/auth/sign" py="3" transition="all ease-in-out 1s"  w="3/5" border="0 rounded-md " hover="shadow-xl"   bg="white"  un-text="black center bold" font="bold" md="py-3" lg="py-4 ">
+                    <NuxtLink to="/auth/sign" py="3" transition="all ease-in-out 1s"  w="3/5" border="0 rounded-md  " hover=" shadow-lg  shadow-gray-700 "   bg="light"  un-text="black center bold" font="bold" md="py-3" lg="py-4 ">
                         ابدا الان</NuxtLink>
                 </div>
                 <Swiper :modules="[SwiperAutoplay]" :loop="true" :speed="1000" :autoplay="{ delay: 3000, }"

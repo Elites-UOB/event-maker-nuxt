@@ -7,7 +7,7 @@
         <div w="100%" h="100%" flex="~" justify="evenly" items="center" class="!hidden !md:flex">
             <ul flex="~ " gap="9" mx="2" justify="center" font="bold" text="md:sm lg:lg xl:xl" w="100%">
                 <NuxtLink v-for="nav in navs" :key="nav.name" :to="nav.path" transition="all ease-in-out 1s" cursor="pointer" un-text="light lg"
-                    hover="text-[#0B84FF]">{{ nav.name }}</NuxtLink>
+                    hover="text-gray-600">{{ nav.name }}</NuxtLink>
             </ul>
             <!-- container holds the profile information -->
             <NuxtLink v-if="isLoggedIn()" to="/auth/profile"  flex="~"  

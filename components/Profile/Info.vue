@@ -1,6 +1,8 @@
 <template>
     <CostumeContainer w="full" flex="~ col" justify="evenly" items="center" p="2">
+        
         <CostumeBox w="full" flex="~ col" items="around" gap="8">
+            
             <div flex="~" text="light " items="start">
                 <div flex="~ col gap-5" justify="between" h="72" items="start">
                     <div flex="~ col-2 gap-10">
