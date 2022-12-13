@@ -8,7 +8,7 @@
                             المعلومات
                         </div>
                         <div flex="~ col gap-2">
-                            <h2 text="gray-100 md:lg"> الاسم </h2>
+                            <h2 text="gray-100 md:md"> الاسم </h2>
                             <div flex="~ " text="sm  md:lg" mb="6">
                                 <h8 :class="openin ? 'hidden' : 'visible'"> نادي النخبة المطورين </h8>
                                 <input :class="openin ? 'visible' : 'hidden'" w="30 md:40" text="light" bg="dark"
@@ -17,7 +17,7 @@
                                 <Icon v-if="!openin ? 'name=material-symbols:edit' : 'name=icon-park-solid:correct'"
                                     @click="openin = !openin" name="material-symbols:edit" />
                             </div>
-                            <h2 text="gray-100 sm md:lg">الوصف </h2>
+                            <h2 text="gray-100 sm md:md">الوصف </h2>
                             <div flex="~" text="sm md:md">
                                 <h8 w="35 sm:full" :class="opentx ? 'hidden' : 'visible'"> زين يكول هذا الحدث كذا وكذا
                                     ونتشكر منهم
