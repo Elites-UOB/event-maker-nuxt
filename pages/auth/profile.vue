@@ -18,7 +18,7 @@
         </div>
         <div text="light" w="full sm:5/6  md:5/6" flex="~" justify="center" items="center" gap="2em" mx="auto"
             py="5" px="2" class="profile-container">
-            <ProfileInfo />
+            <ProfileInfo :input="input" />
         </div>
     </div>
 </template>
@@ -28,5 +28,9 @@ definePageMeta({
 })
 const { user } = useAuth()
 const name = "material-symbols:edit"
+const input = reactive({
+    email: '',
+    password: '',
+});
 
 </script>
