@@ -1,8 +1,7 @@
 <template>
-    <div flex="~" text="light " items="start"  >
-        <div flex="~ col gap-12" justify="between" h="72" w="150" items="start">
-            <!--  -->
-            <div flex="~ col-2 gap-22">
+    <div flex="~" text="light " items="start">
+        <div flex="~ col gap-8" justify="between" h="72" items="start">
+            <div flex="~ col-2 gap-10">
                 <div class="opacity-40">
                     عن الحدث
                 </div>
@@ -13,13 +12,12 @@
                         <Icon name="material-symbols:edit" />
                     </div>
                     <div flex="~">
-                        <div w="81"> زين يكول هذا الحدث كذا وكذا ونتشكر منهم وجيبو شغلاتكم </div>
-                        <Icon name="material-symbols:edit" />
+                        <div> زين يكول هذا الحدث كذا وكذا ونتشكر منهم وجيبو شغلاتكم </div>
+                        <!-- <Icon name="material-symbols:edit" /> -->
                     </div>
                 </div>
             </div>
-            <!--  -->
-            <div flex="~ col-2 gap-22">
+            <div flex="~ col-2 gap-10">
                 <div class="opacity-40">
                     مدة الحدث
                 </div>
@@ -44,7 +42,7 @@
                 </div>
             </div>
             <!--  -->
-            <div flex="~ col-2 gap-22">
+            <div flex="~ col-2 gap-4">
                 <div class="opacity-40">
                     رابط الحدث
                 </div>
@@ -57,35 +55,25 @@
                         </div>
                     </div>
                     <div>
-                        <h1 class="opacity-40 text-sm"> نوع الرابط </h1>
+                        <h1 class="opacity-40 text-sm">نوع الرابط</h1>
                         <div mt="2">
-                            <!-- هاي الدكمه موتتني عدلها dropdown  -->
-                            <va-button-dropdown preset="secondary" border="rounded 1 opacity-20  success" label="خاص"
-                                class="mr-2 mb-2">عام</va-button-dropdown>
+                            <select bg="transparent" border="rounded 1 opacity-20 success" class="mr-2 mb-2 text-white" px="4" py="1" >
+                                <option selected bg="black" value="خاص" hover="white">خاص</option>
+                                <option value="عام" bg="black" hover="white">عام</option>
+                            </select>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--  -->
         </div>
     </div>
 </template>
-<script >
 
-// const datePlusDay = (date, days) => {
-//     const d = new Date(date)
-//     d.setDate(d.getDate() + days)
-//     return d
-// }
-// const nextWeek = datePlusDay(new Date(), 7)
-
-// export default {
-//     data() {
-//         return {
-//             single: new Date(),
-//             multiple: [new Date(), nextWeek],
-//             range: { start: new Date(), end: nextWeek },
-//         }
-//     },
-// }
+<script setup>
 </script>
+
+<style>
+option:hover {
+    background-color: #1E1E1E;
+}
+</style>

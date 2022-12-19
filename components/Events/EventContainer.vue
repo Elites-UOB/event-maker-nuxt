@@ -1,30 +1,13 @@
 <template>
-    <div border="1 opacity-30 light rounded-md" w="100%" lg:w="30em" xl:w="50em"  h="8em" flex="~" items="center">
-        <img :src="event.img_url" 
-         w="7em" h="6em" mx=".5em" alt="event image"/>
-            
-        <div h="full" w="full" p="1em" flex="~" items="center" text="light">
-            {{ content }} <br>
-            {{ enterprise }}
+    <div>
+        <div><img src="/eve.png" w="full" h="68" class="relative" alt="event image">
+            <div class="absolute" w="full" h="64" left="0" top="24"
+                style="background: linear-gradient(180deg, rgba(40, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);">
+            </div>
+            <Icon name="material-symbols:edit" class="absolute" right="4" top="77" text="2xl light" />
         </div>
-
-        <MaterialSymbolsAddBoxRounded/>
     </div>
 </template>
 
 <script setup>
-const props = defineProps({
-    event: {
-        type: Object,
-        required: true
-    },
-    content: {
-        type: String,
-        required: true
-    },
-    enterprise: {
-        type: String,
-        required: true
-    },
-})
 </script>

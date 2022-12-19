@@ -5,6 +5,8 @@ export default defineNuxtConfig({
     '@vuestic/nuxt',
     '@vueuse/nuxt',
     ['nuxt-icon'],'nuxt-swiper',
+    ['@nuxtjs/supabase'],
+    '@kevinmarrec/nuxt-pwa',
   ],
   unocss: {
     // presets
@@ -32,7 +34,7 @@ export default defineNuxtConfig({
             box-sizing: border-box;
           }
           body {
-            background: #111111;
+            background: #1E1E1E;
             padding: 0;
             margin: 0;
             direction: rtl;
@@ -60,10 +62,15 @@ export default defineNuxtConfig({
     },
   },
   vuestic: {
-    // config: {
-    //   // ...
-    // },
-
     css: ['typography', 'reset','grid'],
+  },
+  pwa: {
+    manifest: {
+      name: "event",
+      lang: "ar",
+    },
+    workbox: {
+    //enabled: true
+    }
   },
 })

@@ -1,5 +1,5 @@
 <template>
-    <aside class="h-full w-full p-5 text-white bg-#0d0a14 font-black" transition="all ease-in-out .3s">
+    <aside class="h-full w-full p-5 text-white bg-#111 font-black" transition="all ease-in-out .3s">
         <div h="10" w="full" flex="~" justify="end">
             <Icon id="icon" name="ic-baseline-menu" text="2xl" @click="toggleSidebar()" cursor="pointer" mt="2"
                 class="text-white cursor-pointer hover:text-black hover:bg-white rounded-xl p"
@@ -7,7 +7,16 @@
         </div>
         <div flex="~ col" gap="10" items="center" justify="center" h="80%">
             <NuxtLink v-for="nav in navs" :to="nav.link" :key="nav.name" @click="toggleSidebar()">
-                <section text="white" hover="underline">{{ nav.name }}</section>
+                <section text="white">{{ nav.name }}</section>
+            </NuxtLink>
+            <NuxtLink to="/auth/sign" :class="isLoggedIn() ? 'hidden' : 'visible'" @click="toggleSidebar()" >
+                <section text="white"> Log In </section>
+            </NuxtLink>
+            <div v-if="isLoggedIn()" @click="signOut">
+                <section text="white"> Log Out </section>
+            </div>
+            <NuxtLink to="/auth/profile" v-if="isLoggedIn()" @click="toggleSidebar()">
+                <section text="white">Manage Event </section>
             </NuxtLink>
         </div>
     </aside>
@@ -20,6 +29,7 @@ const props = defineProps({
         required: true
     }
 })
+const { isLoggedIn, signOut, user } = useAuth()
 
 const navs = [
     {
@@ -27,17 +37,10 @@ const navs = [
         link: '/'
     },
     {
-        name: 'My Events',
+        name: 'Event',
         link: '/events'
     },
-    {
-        name: 'Services',
-        link: '/'
-    },
-    {
-        name: 'Manage Events',
-        link: '/'
-    }
+
 ]
 
 
