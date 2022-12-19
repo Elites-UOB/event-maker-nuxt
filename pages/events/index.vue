@@ -1,7 +1,7 @@
 <template>
     <div text="light">
         <Swiper :modules="[SwiperAutoplay]" :slides-per-view="1" :loop="true" :autoplay="{ delay: 4000 }" :speed="1000">
-            <SwiperSlide v-for="slide in 3" :key="slide" class="swiper-slide">
+            <SwiperSlide v-for="item in data" :key="item.id" class="swiper-slide">
                 <img src="/eve.png" w="full" h="52 md:68" class="" alt="event image">
                 <div class="absolute" z="1" w="full" h="full" left="0" top="24" flex="~ col" justify="center"
                     items="center"
@@ -10,8 +10,8 @@
                 <div class="absolute z-3" text="light" flex="~ gap-6" justify="center" items="end" right="4 md:20" top="18 sm:10 md:9">
                     <div bg="#D9D9D9" alt="calendar" w="180px sm:140px lg:180px" h="100px sm:140px lg:180px"></div>
                     <div>
-                        <h1 text="lg sm:xl lg:2xl">حفل استقبال طلبة المرحلة الاولى</h1>
-                        <span text="sm sm:md lg:lg">2202-12-01</span>
+                        <h1 text="lg sm:xl lg:2xl">  {{item.title}}  </h1>
+                        <span text="sm sm:md lg:lg">{{item.start_time}}</span>
                         <p text="sm sm:md lg:lg" mb="3" hidden sm="block">كلية علوم الحاسوب - جامعة البصرة</p>
                     </div>
                 </div>
@@ -24,4 +24,7 @@
     </div>
 </template>
 <script setup>
+const supabase = useSupabaseClient()
+const { data, error } = await supabase.from('events').select('*')
+
 </script>
