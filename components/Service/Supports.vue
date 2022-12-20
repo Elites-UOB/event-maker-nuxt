@@ -24,8 +24,8 @@
 </template>
 
 <script setup>
-import UOB from "@/public/UOB.png"
-import CONNECT from "@/public/connect.png"
-import GUCD from "@/public/gucd.png"
-import MICROSOFT from "@/public/windows.png"
+import UOB from "@/UOB.png"
+import CONNECT from "@/connect.png"
+import GUCD from "@/gucd.png"
+import MICROSOFT from "@/windows.png"
 </script>
