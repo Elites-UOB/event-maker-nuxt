@@ -1,42 +1,19 @@
-# Nuxt 3 Minimal Starter
+![cover](https://user-images.githubusercontent.com/5357529/204332967-033f1514-d373-4cdb-a600-b5d28c6a0dca.jpg)
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
-## Setup
+# Resources
+Is an open-source project. You can make your events and share it .
 
-Make sure to install the dependencies:
+Feel free to open pull request.
 
-```bash
-# yarn
-yarn install
 
-# npm
-npm install
+Using Nuxt 3 & Supabase,
+https://nuxt.com/,
 
-# pnpm
-pnpm install --shamefully-hoist
-```
 
-## Development Server
+With ❤️.
 
-Start the development server on http://localhost:3000
+# Team
+1. Frontend (Zainab Amjed, Hassan Mohammed).
+2. Backend ().
 
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
