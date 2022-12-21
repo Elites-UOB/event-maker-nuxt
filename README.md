@@ -7,9 +7,8 @@ Is an open-source project. You can make your events and share it .
 Feel free to open pull request.
 
 
-Using Nuxt 3 & Supabase,
-https://nuxt.com/,
-
+Using Nuxt 3 & Supabase ,
+https://nuxt.com/ https://supabase.com/ .
 
 With ❤️.
 
