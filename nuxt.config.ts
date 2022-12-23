@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     ['nuxt-icon'],'nuxt-swiper',
     ['@nuxtjs/supabase'],
-    '@kevinmarrec/nuxt-pwa',
+    '@kevinmarrec/nuxt-pwa','@pinia/nuxt',
   ],
   
   imports: {
