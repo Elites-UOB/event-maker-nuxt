@@ -1,7 +1,7 @@
 <template>
     <nav flex="~ " justify="end md:between" px="5 lg:10 xl:15" h="15" items="center" bg="#1E1E1E" font="sans" w="100%">
         <NuxtLink to="/" un-text="3xl  white" flex="~" items="center " font="bold" :class="DetailRoute ? 'hidden md:block' : 'block'" w="full md:1/12">
-            VENT<img src="~/public/logo2.svg" w="6" h="6" alt="CSIT LOGO" mr-1 />
+            VENT<img src="/logo2.svg" w="6" h="6" alt="CSIT LOGO" mr-1 />
         </NuxtLink>
         <!-- container holds the content in the middle and the end -->
         <div w="100%" h="100%" flex="~" justify="evenly" items="center" class="!hidden !md:flex">
@@ -13,7 +13,7 @@
             <NuxtLink v-if="isLoggedIn()" to="/auth/profile"  flex="~"  
                 justify="center" items="center" >
                 <div>
-                    <img src="../public/fluent-emoji_man-beard-medium.png" alt="user image">
+                    <img src="/fluent-emoji_man-beard-medium.png" alt="user image">
                 </div>
                 <div flex="~" pl="1em" items="center">
                     <!-- <div>
