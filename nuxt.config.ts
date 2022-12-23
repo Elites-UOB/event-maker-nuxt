@@ -8,6 +8,10 @@ export default defineNuxtConfig({
     ['@nuxtjs/supabase'],
     '@kevinmarrec/nuxt-pwa',
   ],
+  
+  imports: {
+    dirs: ["stores/**"],
+  },
   unocss: {
     // presets
     autoImport: true,

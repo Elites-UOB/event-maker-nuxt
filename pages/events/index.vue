@@ -24,7 +24,6 @@
     </div>
 </template>
 <script setup>
-const supabase = useSupabaseClient()
-const { data, error } = await supabase.from('events').select('*')
+const events = useEvents()
 
 </script>
