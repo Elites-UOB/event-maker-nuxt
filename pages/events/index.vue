@@ -17,7 +17,7 @@
                 </div>
             </SwiperSlide>
         </Swiper>
-        <div grid="~ col-1 gap-4 sm:cols-2  md:cols-3 md:gap-8 lg:cols-4 lg:gap-10" w="fit" border="1px solid white" py="10" justify="between" items="center" m="auto" px="10">
+        <div grid="~ col-1 gap-4 sm:cols-2  md:cols-3 md:gap-8 lg:cols-4 lg:gap-10" w="fit" py="10" justify="between" items="center" m="auto" px="10">
             <ServiceIncomingEvents v-for="event in 20" :key="event" px="2" />
         </div>
     </div>
