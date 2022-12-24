@@ -1,9 +1,9 @@
 <template>
-    <nav flex="~ " justify="end md:between" px="5 lg:10 xl:15" h="15" items="center" bg="#1E1E1E" font="sans" w="100%">
+    <header flex="~ " justify="end md:between" px="5 lg:10 xl:15" h="18" items="center" bg="#1E1E1E" w="100%" text="xl lg:2xl xl:3xl">
         <NuxtLink to="/" un-text="3xl  white" font="black" :class="DetailRoute ? 'hidden md:block' : 'block'" w="full md:1/12">EVENTO</NuxtLink>
         <!-- container holds the content in the middle and the end -->
         <div w="100%" h="100%" flex="~" justify="evenly" items="center" class="!hidden !md:flex">
-            <ul flex="~ " gap="9" mx="2" justify="center" font="bold" text="md:sm lg:lg xl:xl" w="100%">
+            <ul flex="~ " gap="9" mx="2" justify="center" font="bold" w="100%">
                 <NuxtLink v-for="nav in navs" :key="nav.name" :to="nav.path" cursor="pointer" un-text="light"
                     hover="text-[#0B84FF]">{{ nav.name }}</NuxtLink>
             </ul>
@@ -18,13 +18,13 @@
                         <p text="white sm" w="20">user name</p>
                     </div>
                     <div @click="toggleArrowDown()" cursor="pointer" ref="arrowDownRef" self="center">
-                        <Icon class="" text="2xl" name="ic-baseline-keyboard-arrow-down" />
+                        <Icon  name="ic-baseline-keyboard-arrow-down" />
                     </div>
                 </div>
             </NuxtLink>
-            <!-- JOIN BUTTON -->
+            <!-- LOGIN BUTTON -->
             <NuxtLink to="/auth/sign" :class="isLoggedIn() ? 'hidden' : 'visible'" un-text="white center" 
-                border="1 rounded-md" py="3" px="4" w="22" mr="3" hover="border-[#0B84FF]">انضمام</NuxtLink>
+                border="1 rounded-md" py="2" px="4" hover="border-[#0B84FF]">انضمام</NuxtLink>
             <AuthLogInButton />
         </div>
         <!-- HUMBERGER ICON -->
@@ -32,10 +32,9 @@
         <div ref="sidebarRef" w="full" h="full"
             class="fixed top-0  bottom-0 right-0 left-0 z-3 block md:hidden hideSideBar"
             transition="all ease-in-out 0.3s">
-            <Sidebar :toggleSidebar="toggleSidebar" />
-            <!--SIDEBAR -->
+            <Sidebar :toggleSidebar="toggleSidebar" /> <!--SIDEBAR --> 
         </div>
-    </nav>
+    </header>
 </template>
 
 <script setup>
@@ -45,9 +44,8 @@ const route = useRoute()
 const DetailRoute = route.fullPath.includes('events/detail')
 
 const navs = ref([
-    { name: 'Home', path: '/' },
-    { name: 'Events', path: '/events' },
-    { name: 'Services', path: '/service' },
+    { name: 'الصفحة الرئيسية', path: '/' },
+    { name: 'الاحداث', path: '/events' },
 ])
 
 const toggleSidebar = () => {

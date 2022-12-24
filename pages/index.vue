@@ -5,9 +5,9 @@
                 lg="by-12 m-auto w-4/5 ">
                 <div p="15" md=" items-start " flex="~ col gap-4 basis-2/3" justify="cenetr" items="center"
                     lg="justify-between gap-8  ">
-                    <h1 text="2xl light" font="bold" md="text-4xl" lg="5xl">Event Maker</h1>
-                    <span text="lg  gray-300" lg="2xl">ادارة حضور الاحداث لم تكن بهذه السهولة من قبل!</span>
-                    <button py="2" w="3/5" border="0 rounded-md" text="black bold" font="bold" md="py-3" lg="py-4 ">
+                    <h1 text="4em light" font="bold" md="text-4xl" lg="5xl">Event Maker</h1>
+                    <span text="32px  gray-300" lg="2xl">ادارة حضور الاحداث لم تكن بهذه السهولة من قبل!</span>
+                    <button py="2" w="3/5" border="0 rounded-15px" text="black bold" font="bold" md="py-3" lg="py-4 ">
                         ابدا الان</button>
                 </div>
                 <Swiper :modules="[SwiperAutoplay]" :loop="true" :speed="1000" :autoplay="{ delay: 3000, }"
@@ -26,18 +26,17 @@
                 </Swiper>
             </div>
         </div>
-        <div>
+        <section>
             <ServiceCards />
             <div flex="~" justify="between" w="5/6  md:1.5/2" class="mx-auto" my="2">
                 <h1 text="white lg bold md:xl lg:2xl">أحداث قادمة</h1>
                 <h1 text="#background: #676767 lg md:xl lg:2xl">استكشف المزيد</h1>
             </div>
-            <div grid="~ col-1 gap-4 sm:cols-2  md:cols-3 md:gap-4 lg:cols-4" w="fit" py="10" justify="center"
-                items="center" m="auto">
+            <div grid="~ col-1 sm:cols-2 md:cols-3 lg:cols-4" gap-y="1em" py="10" justify="center" items="between" mx="auto" class="w-full xl:max-w-7xl">
                 <ServiceIncomingEvents v-for="event in 4" :key="event" />
             </div>
             <ServiceSupports />
-        </div>
+        </section>
     </div>
 </template>
 

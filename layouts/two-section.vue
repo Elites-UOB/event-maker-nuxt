@@ -1,9 +1,9 @@
 <template>
-    <div md:flex="~" mt="12" class="mr-[2em] md:mr-0">
+    <div md:flex="~" mt="12" class="mr-[2em] md:mr-0" justify="start" items="center">
         <div flex="basis-2/5 md:basis-1/5" display="hidden md:block">
-            <slot name="left" />
+            <slot name="left" /> 
         </div>
-        <div flex="basis-3/5  md:basis-4/5">
+        <div max-w-7xl flex="basis-3/5  md:basis-4/5" display="hidden md:block">
             <slot name="right" />
         </div>
     </div>
