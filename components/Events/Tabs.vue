@@ -14,7 +14,7 @@
             </div>
         </CostumeBox>
         <!-- Header - TABS for Big Screen Devices -->
-        <CostumeBox class="absolute hidden md:block" right="10 md:10" bg="dark" border="rounded-xl">
+        <CostumeBox class="absolute hidden md:block mr:0 lg:mr-0 xl:mr-20 2xl:mr-30" right="10  md:1/11" bg="dark" border="rounded-xl">
             <div v-for="(label, index) in labels" :key="label" @click="selectedTab = index" cursor="pointer" :class="[
                 selectedTab == index ? 'bg-success text-light' : '',
                 index == 0 ? 'rounded-t-xl ' : '',

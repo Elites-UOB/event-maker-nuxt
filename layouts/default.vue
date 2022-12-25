@@ -1,8 +1,9 @@
 <template>
     <div flex="~ col" h="full" font="sans">
         <Header />
-        <div flex="grow">
+        <main flex="grow">
             <slot />
-        </div>
+        </main>
+        <Footer />
     </div>
 </template>

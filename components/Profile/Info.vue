@@ -52,7 +52,7 @@
             <div flex="~" justify="center" p="12">
                 <div flex="~  wrap gap-4" h="fit-content" justify="center">
                     <EventsAdd />
-                    <ServiceIncomingEvents v-for="event in 20" :key="event" />
+                    <ServiceEventCard v-for="event in 20" :key="event" />
                 </div>
             </div>
         </CostumeBox>
