@@ -57,8 +57,6 @@ const DetailRoute = route.fullPath.includes('events/detail')
 const navs = ref([
     { name: 'الصفحة الرئيسية', path: '/' },
     { name: 'الاحداث', path: '/events' },
-    { name: 'الصفحة الرئيسية', path: '/' },
-    { name: 'الاحداث ', path: '/events' },
 ])
 
 const toggleSidebar = () => {

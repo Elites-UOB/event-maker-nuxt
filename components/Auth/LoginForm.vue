@@ -1,24 +1,20 @@
 <template>
-    <div sm="w-full" >
-        <div v-if="!showConfirmemail" class="center"   flex="~ col  gap-4">
+    <div w="full">
+        <div v-if="!showConfirmemail" class="center" flex="~ col  gap-4">
             <h1 text="light 4xl center " mb="12" font="bold"> Event Maker</h1>
-            <div v-if="authState == 'Singup'" flex="~ col gap-1"><label text="light sm opacity-60 "
-                    for="name">الاسم</label>
-                <input type="name" v-model="input.name" bg="#27292B" border="rounded-md light opacity-20"
-                    focus="border-success" text="light" p="2 lg:3" required />
+            <div v-if="authState == 'Singup'" flex="~ col gap-1"><label text="light sm opacity-60" for="name">الاسم</label>
+                <input type="name" @click="clearAuthError()"  v-model="input.name" bg="#27292B" border="rounded-md light opacity-20" focus="border-success" text="light" p="2 lg:3" required />
             </div>
             <div flex="~ col gap-1"><label text="light sm opacity-60 " for="email">البريد الالكتروني</label>
-                <input type="email" v-model="input.email" bg="#27292B" border="rounded-md light opacity-20"
-                    focus="border-success" text="light" p="2 lg:3" required />
+                <input type="email" @click="clearAuthError()" v-model="input.email" bg="#27292B" border="rounded-md light opacity-20" focus="border-success" text="light" p="2 lg:3" required />
             </div>
             <div flex="~ col gap-1"><label text="light sm opacity-60 " for="password">كلمة المرور </label>
-                <input type="password" v-model="input.password" bg="#27292B" border="rounded-md light opacity-20"
-                    focus="border-success" text="light" p="2 lg:3"  required />
+                <input type="password" @click="clearAuthError()" v-model="input.password" bg="#27292B" border="rounded-md light opacity-20" focus="border-success" text="light" p="2 lg:3"  required />
             </div>
             <va-button v-if="authState == 'Login'" @click="handleSubmit" color="info">تسجيل الدخول</va-button>
             <va-button v-if="authState == 'Singup'" @click="handleSubmit" color="info"> انشاء حساب</va-button>
             <p v-if="authError" text="error">{{ authError }}</p>
-            <p text="blue-700 opacity-70 center" mt="3" @click="toggleAuthState">{{ authState === 'Login' ? ' ليس لديك حساب ؟ ' : ' تسجيل دخول '}}</p>
+            <p cursor="pointer" text="blue-700 opacity-70 center" mt="3" @click="toggleAuthState">{{ authState === 'Login' ? ' ليس لديك حساب ؟ ' : ' تسجيل دخول '}}</p>
         </div>
         <div v-else>
             <h3 text="xl light ">تحقق من بريدك الإلكتروني للتحقق من حسابك</h3>
@@ -32,10 +28,15 @@ const input = reactive({
     email: '',
     password: '',
 });
+
+function clearAuthError() {
+    authError.value = ''
+}
+
 const authState = ref<'Login' | 'Singup'>('Login');
 const toggleAuthState = () => {
     authState.value = authState.value === 'Login' ? 'Singup' : 'Login'
-    authError.value = ''
+    clearAuthError()
 }
 const router = useRouter()
 const handleSubmit = async () => {

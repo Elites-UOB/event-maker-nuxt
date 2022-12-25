@@ -16,8 +16,7 @@
                 </div>
             </div>
         </div>
-        <div text="light" w="full sm:5/6  md:5/6" flex="~" justify="center" items="center" gap="2em" mx="auto"
-            py="5" px="2" class="profile-container">
+        <div text="light" w="full sm:5/6  md:11/12" mx="auto" py="5">
             <ProfileInfo :input="input" />
         </div>
     </div>
