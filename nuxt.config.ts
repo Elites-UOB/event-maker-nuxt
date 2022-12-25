@@ -6,12 +6,8 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     ['nuxt-icon'],'nuxt-swiper',
     ['@nuxtjs/supabase'],
-    '@kevinmarrec/nuxt-pwa','@pinia/nuxt',
+    // '@kevinmarrec/nuxt-pwa',
   ],
-  
-  imports: {
-    dirs: ["stores/**"],
-  },
   unocss: {
     // presets
     autoImport: true,
@@ -27,7 +23,6 @@ export default defineNuxtConfig({
     webFonts: {
       provider: 'google',
       fonts: {
-        "sans": ['Poppins:200,300,400,500,600,700,800,900'],
         "arabic": ['Tajawal:200,300,400,500,600,700,800,900'],
       },
     },
@@ -35,11 +30,11 @@ export default defineNuxtConfig({
       {
          getCSS: ({ theme }) => `
           * {
-            font-family: ${theme['fontFamily']['sans']};
+            font-family: ${theme['fontFamily']['arabic']};
             box-sizing: border-box;
           }
           body {
-            background: #1E1E1E;
+            background: #111111;            ;
             padding: 0;
             margin: 0;
             direction: rtl;

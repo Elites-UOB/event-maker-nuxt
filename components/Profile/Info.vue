@@ -1,5 +1,5 @@
 <template>
-    <CostumeContainer w="full" flex="~ col" justify="evenly" items="center" p="y-2 x-5">
+    <CostumeContainer w="full" flex="~ col" justify="evenly" items="center">
         <CostumeBox w="full" flex="~ col" items="around" gap="8">
             <div flex="~" text="light " items="start">
                 <div flex="~ col gap-5" justify="between" h="72" items="start">
@@ -34,14 +34,11 @@
                             الحساب </div>
                         <div flex="~ col gap-2">
                             <h2 text="gray-100 sm "> البريد الالكتروني </h2>
-                            <input type="email" v-model="input.email" bg="#27292B" border="rounded-md light opacity-20"
-                                focus="border-success" text="light sm" p="1" />
+                            <input type="email" v-model="input.email" bg="#27292B" border="rounded-md light opacity-20" focus="border-success" text="light sm" p="1" />
                             <h2 text="gray-100 sm "> كلمة المرور </h2>
-                            <input type="password" v-model="input.password" bg="#27292B"
-                                border="rounded-md light opacity-20" focus="border-success" text="light sm" p="1" />
+                            <input type="password" v-model="input.password" bg="#27292B" border="rounded-md light opacity-20" focus="border-success" text="light sm" p="1" />
                             <h2 text="gray-100 sm "> أعادة كلمة المرور </h2>
-                            <input type="password" v-model="input.password" bg="#27292B"
-                                border="rounded-md light opacity-20" focus="border-success" text="light sm" p="1" />
+                            <input type="password" v-model="input.password" bg="#27292B" border="rounded-md light opacity-20" focus="border-success" text="light sm" p="1" />
                         </div>
                     </div>
                 </div>
@@ -49,10 +46,10 @@
         </CostumeBox>
         <CostumeBox w="full" py="30">
             <h1 text="3xl">أحداثي</h1>
-            <div flex="~" justify="center" p="12">
-                <div flex="~  wrap gap-4" h="fit-content" justify="center">
-                    <EventsAdd />
-                    <ServiceIncomingEvents v-for="event in 20" :key="event" />
+            <div flex="~"  w="full">
+                <div flex="~ gap-5 wrap" justify="between" items="center"  mx="auto"  border='1px solid white'>
+                    <EventsAdd  />
+                    <ServiceEventCard v-for="event in 11" :key="event" class="event-card"/>
                 </div>
             </div>
         </CostumeBox>

@@ -1,5 +1,5 @@
 <template>
-    <CostumeContainer flex="~ col" gap="10" w="full lg:90%">
+    <CostumeContainer flex="~ col" gap="10" w="full lg:90%" xl:mr="5em">
 
         <!-- الإضافة -->
         <EventsAboutAddition />
