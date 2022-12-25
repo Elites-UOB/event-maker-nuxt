@@ -1,5 +1,5 @@
 <template>
-    <footer w="full" py="15">
+    <footer w="full" pt="25" my="25">
         <a href="https://csitelites.tech" target="_blank">
         <section flex="~ col" mx="auto" items="center" gap-y="3" mb="6" mt="20"  text="white">
             <!-- :my="detailPath ? '45' : '30'" -->

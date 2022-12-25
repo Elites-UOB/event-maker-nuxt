@@ -7,7 +7,7 @@
             <span p="1" text="#FFFFFF 16px" font="400">2022 - 12 - 01</span>
             <p p="2" text="#FFFFFF 16px" font="400">كلية علوم الحاسوب - جامعة البصرة</p>
         </div>
-        <NuxtLink to="/events/detail" bg="white" un-text="black center" font="bold" mx="3" py="4" px="20" border="0 #FFFFFF rounded-15px">المزيد</NuxtLink>
+        <NuxtLink to="/events/detail" bg="white" un-text="black center" font="bold" mx="3" py="4" px="20" border="0 #FFFFFF rounded-15px">انضمام</NuxtLink>
     </section>
 </template>
 

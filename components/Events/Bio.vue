@@ -11,7 +11,7 @@
                         <h1>حفل افتتاح الطلبة الجدد</h1>
                         <Icon name="material-symbols:edit" class="icon" />
                     </div>
-                    <div flex="~" gap="2">
+                    <div flex="~" justify="around" w="full">
                         <div>زين يكول هذا الحدث كذا وكذا ونتشكر منهم وجيبو شغلاتكم</div>
                         <Icon name="material-symbols:edit" class="icon" />
                     </div>
