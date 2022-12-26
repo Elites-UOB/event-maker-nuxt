@@ -30,8 +30,12 @@
                     items="center" />
             </div>
         </CostumeBox>
+
+
         <!-- Header - TABS for Small Screen Devices -->
-        <CostumeBox class="absolute md:hidden" top="2" right="4%" flex="~" bg="dark" border="rounded-xl">
+       
+
+        <CostumeBox class="absolute md:hidden" top="4" right="4%" flex="~" bg="dark" border="rounded-xl">
             <div v-for="(label, index) in labels" :key="label" @click="selectedTab = index" w="fit-content" :class="[
                 selectedTab == index ? 'bg-success text-light' : '',
                 index == 0 ? 'rounded-r-xl ' : '',
