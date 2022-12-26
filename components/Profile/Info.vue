@@ -1,6 +1,9 @@
 <template>
-    <CostumeContainer w="full" flex="~ col" justify="evenly" items="center">
-        <CostumeBox w="full" flex="~ col" items="around" gap="8">
+    <CostumeContainer w="full" flex="~ col" justify="evenly">
+
+        <!-- CONTAINER BIO -->
+
+        <CostumeBox w="full" flex="~ col" items="around" gap="8" px=" md:25">
             <div flex="~" text="light " items="start">
                 <div flex="~ col gap-5" justify="between" h="72" items="start">
                     <div flex="~ col-2 gap-10">
@@ -9,7 +12,7 @@
                         </div>
                         <div flex="~ col gap-2">
                             <h2 text="gray-100 md:md"> الاسم </h2>
-                            <div flex="~ " text="sm  md:lg" mb="6">
+                            <div flex="~ " text="sm  md:lg" mb="6" >
                                 <h8 :class="openin ? 'hidden' : 'visible'"> نادي النخبة المطورين </h8>
                                 <input :class="openin ? 'visible' : 'hidden'" w="30 md:40" text="light" bg="dark"
                                     border="0 rounded" mx="1" p="1" />
@@ -29,30 +32,34 @@
                             </div>
                         </div>
                     </div>
-                    <div flex="~ col-2 gap-10" p="y-2 x-5">
-                        <div class="opacity-40">
-                            الحساب </div>
-                        <div flex="~ col gap-2">
-                            <h2 text="gray-100 sm "> البريد الالكتروني </h2>
+                    <div flex="~ col-2 gap-10" p="y-2 x-5" w="full">
+                        <div class="opacity-40">الحساب</div>
+                        <div flex="~ col gap-2" w="full">
+                            <h2 text="gray-100 sm ">البريد الالكتروني</h2>
                             <input type="email" v-model="input.email" bg="#27292B" border="rounded-md light opacity-20" focus="border-success" text="light sm" p="1" />
-                            <h2 text="gray-100 sm "> كلمة المرور </h2>
+                            <h2 text="gray-100 sm ">كلمة المرور</h2>
                             <input type="password" v-model="input.password" bg="#27292B" border="rounded-md light opacity-20" focus="border-success" text="light sm" p="1" />
-                            <h2 text="gray-100 sm "> أعادة كلمة المرور </h2>
+                            <h2 text="gray-100 sm ">أعادة كلمة المرور</h2>
                             <input type="password" v-model="input.password" bg="#27292B" border="rounded-md light opacity-20" focus="border-success" text="light sm" p="1" />
                         </div>
                     </div>
                 </div>
             </div>
         </CostumeBox>
-        <CostumeBox w="full" py="30">
-            <h1 text="3xl">أحداثي</h1>
-            <div flex="~"  w="full">
-                <div flex="~ gap-5 wrap" justify="between" items="center"  mx="auto"  border='1px solid white'>
+
+        <!-- CONTAINER MY EVENTS -->
+
+        <CostumeBox w="full" py="30" mx="auto">
+            <h1 text="3xl" px="20">أحداثي</h1>
+            <div w="full" mx="auto">
+                <div grid="~ col-1 gap-4 sm:cols-2  md:cols-3 md:gap-5 lg:cols-4 lg:gap-2 gap-y-4" max-w-7xl py="10" items="center" justify="evenly" px="2" mx="auto" >
                     <EventsAdd  />
                     <ServiceEventCard v-for="event in 11" :key="event" class="event-card"/>
                 </div>
             </div>
         </CostumeBox>
+
+
     </CostumeContainer>
 </template>
 
