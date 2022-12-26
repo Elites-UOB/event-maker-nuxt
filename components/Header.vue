@@ -1,9 +1,9 @@
 <template>
     <header flex="~ " justify="end md:between" px="5 lg:10 xl:15" h="18" items="center" bg="#1E1E1E" w="100%" text="xl lg:2xl xl:3xl">
+       
         <!-- LOGO -->
-        <NuxtLink to="/" un-text="3xl  white" flex="~" items="center " font="bold" :class="DetailRoute ? 'hidden md:block' : 'block'" w="full md:1/12">
-            VENT<img src="~/public/logo2.svg" w="6" h="6" alt="CSIT LOGO" mr-1 />
-        </NuxtLink>
+
+        <NuxtLink ref="logo" to="/" un-text="3xl white" flex="~" items="center" font="bold" :class="DetailRoute ? 'hideLogo !md:block' : 'block'" w="30">VENT<img src="~/public/logo2.svg" w="6" h="6" alt="CSIT LOGO" mr-1 /></NuxtLink>
 
         <!-- CONTAINER HOLD THE CONTENT IN THE MIDDLE AND THE END -->
         <div w="100%" h="100%" flex="~" justify="evenly" items="center" class="!hidden !md:flex">
@@ -25,7 +25,11 @@
                     </div>
                 </div>
             </NuxtLink>
+
+
             <AuthLogInButton />
+
+
             <!-- LOGIN BUTTON -->
             <NuxtLink to="/auth/sign" :class="isLoggedIn() ? 'hidden' : 'visible'" un-text="white center" border="1 rounded-md" py="2" px="4" hover="border-[#0B84FF]" text="lg xl:2xl">انضمام</NuxtLink>
         </div>
@@ -48,7 +52,9 @@
 const arrowDownRef = ref(null)
 const sidebarRef = ref(null)
 const route = useRoute()
-const DetailRoute = route.fullPath.includes('events/detail')
+const DetailRoute = route.path.includes('/events/detail')
+
+
 
 const navs = ref([
     { name: 'الصفحة الرئيسية', path: '/' },
@@ -79,5 +85,9 @@ const { isLoggedIn, signOut, user } = useAuth()
 
 .appearHamburger {
     color: white;
+}
+
+.hideLogo {
+    display: none;
 }
 </style>

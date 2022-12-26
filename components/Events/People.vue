@@ -1,5 +1,5 @@
 <template>
-    <CostumeContainer flex="~" justify-between items-start  gap="20">
+    <CostumeContainer flex="~" justify-between items-start  gap="5 lg:20 xl:30">
         <h3 text="#676767 12px sm:sm md:md lg:lg xl:xl" mt="2" class="hidden md:block">المتقدمين</h3>
         <table  w="full">
             <thead w="full" text="xs sm:sm md:md">

@@ -2,7 +2,7 @@
     <div flex="~" text="light 1.5em" items="start">
         <div flex="~ col gap-8" justify="between" h="72" items="start">
             <div flex="~ col-2 gap-10">
-                <div class="opacity-40">
+                <div class="opacity-40 hidden md:block">
                     عن الحدث
                 </div>
                 <div flex="~ col gap-2">
@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div flex="~ col-2 gap-10" text="20px">
-                <div class="opacity-40">
+                <div class="opacity-40 hidden md:block">
                     مدة الحدث
                 </div>
                 <div flex="~ col gap-4">
@@ -43,7 +43,7 @@
             </div>
             <!--  -->
             <div flex="~ col-2 gap-4">
-                <div class="opacity-40">
+                <div class="opacity-40 hidden md:block">
                     رابط الحدث
                 </div>
                 <div flex="~ col gap-4">
