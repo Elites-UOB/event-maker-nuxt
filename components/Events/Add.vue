@@ -6,13 +6,12 @@
         </div>
         <Teleport to="body">
             <Transition>
-                <va-modal blur v-model="showModal" background-color="#333" opacity="90" no-outside-dismiss ok-text="اضافة" click-outside  cancel-text="الغاء">
-                    <div  ref="showModal" h="85" pt="10" flex="~col gap-3" justify="center"  items="center">
-                        <va-input label="العنوان" bg="#222"   width="4" color="#333" /><br /><br />
-                        <va-input class="mb-4 " v-model="value" color="#333" type="textarea" label="الوصف" /><br />
+                <va-modal border="1px solid white" blur v-model="showModal" background-color="#333" opacity="90" no-outside-dismiss ok-text="اضافة" click-outside  cancel-text="الغاء">
+                    <div ref="showModal" h="85" pt="10" flex="~col gap-3" justify="center"  items="center">
+                        <va-input label="العنوان" bg="#222" width="full" color="#333" /><br /><br />
+                        <va-input class="mb-4 " v-model="value" color="#333" type="textarea"  label="الوصف" /><br />
                         <va-input label="رابط الحدث" color="#333"  /><br />
-                        <va-select class="mt-3" label="نوع الرابط"  color="#111" v-model="selectValue" 
-                            :options="options" /><br /><br />
+                        <va-select class="mt-3" label="نوع الرابط"  color="#111" v-model="selectValue" :options="options" /><br /><br />
                         <va-date-input v-model="range" color="#333" /><br />
                     </div>
                 </va-modal>

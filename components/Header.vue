@@ -5,15 +5,13 @@
             VENT<img src="~/public/logo2.svg" w="6" h="6" alt="CSIT LOGO" mr-1 />
         </NuxtLink>
 
-
-        <!-- container holds the content in the middle and the end -->
+        <!-- CONTAINER HOLD THE CONTENT IN THE MIDDLE AND THE END -->
         <div w="100%" h="100%" flex="~" justify="evenly" items="center" class="!hidden !md:flex">
             <ul flex="~ " gap="9" mx="2" justify="center" font="bold" w="100%">
                 <NuxtLink v-for="nav in navs" :key="nav.name" :to="nav.path" transition="all ease-in-out 1s" cursor="pointer" un-text="light lg" hover="text-gray-600">{{ nav.name }}</NuxtLink>
             </ul>
             <!-- container holds the profile information -->
-            <NuxtLink v-if="isLoggedIn()" to="/auth/profile"  flex="~"  
-                justify="center" items="center" >
+            <NuxtLink v-if="isLoggedIn()" to="/auth/profile" flex="~" justify="center" items="center" >
                 <div>
                     <img src="../public/fluent-emoji_man-beard-medium.png" alt="user image">
                 </div>
@@ -29,9 +27,7 @@
             </NuxtLink>
             <AuthLogInButton />
             <!-- LOGIN BUTTON -->
-            <NuxtLink to="/auth/sign" :class="isLoggedIn() ? 'hidden' : 'visible'" un-text="white center" 
-                border="1 rounded-md" py="2" px="4" hover="border-[#0B84FF]">انضمام</NuxtLink>
-            
+            <NuxtLink to="/auth/sign" :class="isLoggedIn() ? 'hidden' : 'visible'" un-text="white center" border="1 rounded-md" py="2" px="4" hover="border-[#0B84FF]" text="lg xl:2xl">انضمام</NuxtLink>
         </div>
 
 
@@ -58,6 +54,7 @@ const navs = ref([
     { name: 'الصفحة الرئيسية', path: '/' },
     { name: 'الاحداث', path: '/events' },
 ])
+
 
 const toggleSidebar = () => {
     sidebarRef.value.classList.toggle('hideSideBar')
