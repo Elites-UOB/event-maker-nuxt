@@ -18,7 +18,6 @@
     "@vuestic/nuxt": "^1.0.6",
     "nuxt-icon": "^0.1.7",
     "nuxt-swiper": "^0.1.6",
-    "pinia": "^2.0.26",
     "qrcode.vue": "^3.3.3",
     "toastr": "^2.1.4"
   }
