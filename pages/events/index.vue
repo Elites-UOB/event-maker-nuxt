@@ -23,8 +23,11 @@
 
 
         <!-- ALL EVENTS -->
-        <div grid="~ col-1 gap-4 sm:cols-2  md:cols-3 md:gap-5 lg:cols-4 lg:gap-2 gap-y-4" max-w-7xl py="10" items="center" justify="evenly" px="2" mx="auto">
-            <ServiceEventCard v-for="event in 20" :key="event"  />
+        <div v-if="eventsStore.events" grid="~ col-1 gap-4 sm:cols-2  md:cols-3 md:gap-5 lg:cols-4 lg:gap-2 gap-y-4" max-w-7xl py="10" items="start" justify="evenly" px="2" mx="auto">
+            <ServiceEventCard  v-for="event in events" :key="event?.id" :event="event" />
+        </div>
+        <div v-if="showSkeleton"  max-w-7xl py="10" items="center" justify="evenly" px="2" mx="auto">
+            <EventsSkeleton />
         </div>
 
 
@@ -33,6 +36,17 @@
 </template>
 
 <script setup>
-const events = useEvents()
+import { useEvents } from '../../stores/events.ts'
+const showSkeleton = ref(true)
+const eventsStore = useEvents()
+const events = ref(eventsStore.events)
+onMounted( async () => {
+    await eventsStore.getEvents()
+    showSkeleton.value = false
+})
+onUnmounted( async () => { 
+    await eventsStore.resetEvents()
+    showSkeleton.value = true
+ })
 
 </script>

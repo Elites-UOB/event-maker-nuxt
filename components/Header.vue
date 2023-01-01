@@ -1,5 +1,5 @@
 <template>
-    <header flex="~ " justify="end md:between" px="5 lg:10 xl:15" h="18" items="center" bg="#1E1E1E" w="100%" text="xl lg:2xl xl:3xl">
+    <header flex="~ " justify="between" px="5 lg:10 xl:15" h="18" items="center" bg="#1E1E1E" w="100%" text="xl lg:2xl xl:3xl">
        
         <!-- LOGO -->
 
@@ -15,6 +15,7 @@
                 <div>
                     <img src="../public/fluent-emoji_man-beard-medium.png" alt="user image">
                 </div>
+            </NuxtLink>
                 <div flex="~" pl="1em" items="center">
                     <!-- <div>
                         <p text="white sm" w="20">user name</p>
@@ -24,7 +25,6 @@
                         <Icon class="" text="2xl light" name="ic-baseline-keyboard-arrow-down" />
                     </div>
                 </div>
-            </NuxtLink>
 
 
             <AuthLogInButton />
@@ -39,9 +39,7 @@
         <Icon @click="toggleSidebar()" cursor="pointer" name="ic-baseline-menu" text="light 2xl" justify-self="start" w="1.8em" class="!md:hidden" />
    
          <!--SIDEBAR -->
-        <div ref="sidebarRef" w="full" h="full"
-            class="fixed top-0  bottom-0 right-0 left-0 z-3 block md:hidden hideSideBar"
-            transition="all ease-in-out 0.3s">
+        <div ref="sidebarRef" w="full" h="full" class="fixed top-0  bottom-0 right-0 left-0 z-3 block md:hidden hideSideBar" transition="all ease-in-out 0.3s">
             <Sidebar :toggleSidebar="toggleSidebar" /> 
         </div>
    

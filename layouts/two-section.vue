@@ -1,5 +1,5 @@
 <template>
-    <div md:flex="~" mt="12" class="mr-[2em] md:mr-0" justify="center" items="start">
+    <div md:flex="~" mt="12" justify="center" items="start">
         <div flex="basis-2/5 md:basis-1/5">
             <slot name="left" /> 
         </div>

@@ -1,7 +1,7 @@
 <template>
     <aside class="h-full w-full p-5 text-white bg-#111111 font-black" transition="all ease-in-out .3s">
         <div h="10" w="full" flex="~" justify="end">
-            <Icon id="icon" name="ic-baseline-menu" text="2xl" @click="toggleSidebar()" cursor="pointer" mt="2" class="text-white cursor-pointer hover:text-black hover:bg-white rounded-xl p" hover="bg-white rounded-xl" />
+            <Icon id="icon" name="ic-baseline-menu" text="2xl" @click="toggleSidebar()" cursor="pointer" mt="1.8" ml="2.5" class="text-white cursor-pointer hover:text-black hover:bg-white rounded-xl p" hover="bg-white rounded-xl" />
         </div>
         <div flex="~ col" gap="10" items="center" justify="center" h="80%">
             <NuxtLink v-for="nav in navs" :to="nav.link" :key="nav.name" @click="toggleSidebar()">

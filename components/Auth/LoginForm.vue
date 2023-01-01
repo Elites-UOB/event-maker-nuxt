@@ -1,6 +1,6 @@
 <template>
     <div w="full">
-        <div v-if="!showConfirmemail" class="center" flex="~ col  gap-4">
+        <div v-if="!showConfirmEmail" class="center" flex="~ col  gap-4">
             <h1 text="light 4xl center " mb="12" font="bold"> Event Maker</h1>
             <div v-if="authState == 'Singup'" flex="~ col gap-1"><label text="light sm opacity-60" for="name">الاسم</label>
                 <input type="name" @click="clearAuthError()"  v-model="input.name" bg="#27292B" border="rounded-md light opacity-20" focus="border-success" text="light" p="2 lg:3" required />
@@ -22,7 +22,7 @@
     </div>
 </template>
 <script setup lang="ts">
-const { signUp, signIn, user } = useAuth();
+const { signUp, signIn } = useAuth();
 const input = reactive({
     name: '',
     email: '',
@@ -46,7 +46,7 @@ const handleSubmit = async () => {
             router.push('/auth/profile')
         } else {
             await signUp({ email: input.email, password: input.password, name: input.name })
-            showConfirmemail.value = true
+            showConfirmEmail.value = true
         }
         input.email = ''
         input.password = ''
@@ -56,5 +56,5 @@ const handleSubmit = async () => {
     }
 }
 const authError = ref("")
-const showConfirmemail = ref(false)
+const showConfirmEmail = ref(false)
 </script>

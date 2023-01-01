@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     ['nuxt-icon'],'nuxt-swiper',
     ['@nuxtjs/supabase'],
+    '@pinia/nuxt',
     // '@kevinmarrec/nuxt-pwa',
   ],
   unocss: {

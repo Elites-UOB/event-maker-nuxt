@@ -5,7 +5,7 @@
                 <div p="15" md=" items-start " flex="~ col gap-4 basis-2/3" justify="cenetr" items="center" lg="justify-between gap-8  ">
                     <h1 text="4xl lg:5xl light" font="bold">Event Maker</h1>
                     <span text="20px md:32px gray-300" lg="2xl">ادارة حضور الاحداث لم تكن بهذه السهولة من قبل!</span>
-                    <button py="2" w="3/5" border="0 rounded-15px" text="black bold" font="bold" md="py-3" lg="py-4 ">ابدا الان</button>
+                    <button py="2" w="3/5" border="0 rounded-15px" text="black bold" font="bold" md="py-3" lg="py-4 " cursor="pointer">ابدا الان</button>
                 </div>
                 <Swiper :modules="[SwiperAutoplay]" :loop="true" :speed="1000" :autoplay="{ delay: 3000, }" flex="~ gap-2 basis-2/3" lg=" items-center " dir="ltr" text="white" cursor="grabbing" py="10 md:0">
                     <SwiperSlide v-for="slide in 5" :key="slide">
@@ -36,8 +36,7 @@
 </template>
 
 <script setup>
-</script> 
-
+</script>
 <style>
 ::-webkit-scrollbar {
     width: 10px;
