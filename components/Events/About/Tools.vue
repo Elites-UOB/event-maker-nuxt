@@ -13,5 +13,10 @@
             </div>
         </div>
     </CostumeBox>
-
 </template>
+
+<script setup>
+//* this code for generate qrcode
+// import QrcodeVue from "qrcode.vue"
+// const inputValue = ref("")
+</script>

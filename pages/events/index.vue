@@ -47,6 +47,6 @@ onMounted( async () => {
 onUnmounted( async () => { 
     await eventsStore.resetEvents()
     showSkeleton.value = true
- })
+})
 
 </script>

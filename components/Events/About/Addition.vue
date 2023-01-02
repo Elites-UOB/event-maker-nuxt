@@ -8,7 +8,7 @@
             </div>
             <div flex="~ row sm:col gap-4" justify="between" mx="auto sm:0" my="4 sm:0" w="40 sm:43 md:43 lg:55" items="start">
                 <label text="#676767" mr="2" class="hidden md:block">الصفة</label>
-                <select bg="transparent" border="rounded-15px #212121" class="mr-2 text-white" py="3" w="full" px="2 md:5 lg:10" cursor="pointer" text="sm">
+                <select bg="transparent" border="rounded-15px #212121" class="mr-2 text-white" py="3" w="full" px="2 md:5 lg:10" cursor="pointer" text="lg">
                     <option selected value="حضور" hover="white" bg="#212121" border="rounded-lg">حضور</option>
                     <option value="vip" hover="white" bg="#212121" border="rounded-lg">vip</option>
                 </select>
@@ -19,5 +19,4 @@
             </div>
         </div>
     </CostumeBox>
-
 </template>
