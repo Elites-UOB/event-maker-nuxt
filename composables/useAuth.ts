@@ -1,4 +1,5 @@
 import useToastr from "~~/components/toast";
+const toast = useToastr()
 
 const useAuth = () => {
     const user = useState('user', () => null)
@@ -24,7 +25,6 @@ const useAuth = () => {
         )
         if (error) throw error
         // toast will pop up after the user is created
-        const toast = useToastr()
         toast.success('تم تسجيل الحساب بنجاح')
         return u
     }
@@ -37,7 +37,6 @@ const useAuth = () => {
                 redirectTo: `${window.location.origin}/auth/profile`,
             })
         if (error) throw error
-        const toast = useToastr()
         toast.success('تم تسجيل الدخول بنجاح')
         
         return u
@@ -46,7 +45,6 @@ const useAuth = () => {
     const signOut = async () => {
         const { error } = await supabase.auth.signOut()
         if (error) throw error  
-        const toast = useToastr()
         toast.success('تم تسجيل الخروج بنجاح')
         router.push('/')
     }

@@ -17,6 +17,8 @@
 
 <script setup>
 //* this code for generate qrcode
-// import QrcodeVue from "qrcode.vue"
-// const inputValue = ref("")
+// CLICKING THE QR CODE CHANGES THE COLOR
+// function randomColor() {
+//     inputValue.value = `#${Math.floor(Math.random() * 16777215).toString(16)}`
+// }
 </script>

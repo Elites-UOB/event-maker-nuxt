@@ -19,10 +19,8 @@
     "@vuestic/nuxt": "^1.0.6",
     "nuxt-icon": "^0.1.7",
     "nuxt-swiper": "^0.1.6",
-    "qrcode-reader": "^1.0.4",
     "qrcode.vue": "^3.3.3",
     "toastr": "^2.1.4",
-    "vue-qrcode-reader": "^3.1.0",
     "vue3-qrcode-reader": "^0.0.1"
   }
 }

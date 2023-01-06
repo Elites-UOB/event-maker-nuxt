@@ -7,24 +7,23 @@
 
         <!-- CONTAINER HOLD THE CONTENT IN THE MIDDLE AND THE END -->
         <div w="100%" h="100%" flex="~" justify="evenly" items="center" class="!hidden !md:flex">
-            <ul flex="~ " gap="9" mx="2" justify="center" font="bold" w="100%">
+            <ul flex="~ " gap="9" mx="2" justify="center" font="bold" w="100%" mr="10">
                 <NuxtLink v-for="nav in navs" :key="nav.name" :to="nav.path" transition="all ease-in-out 1s" cursor="pointer" un-text="light lg" hover="text-gray-600">{{ nav.name }}</NuxtLink>
             </ul>
             <!-- container holds the profile information -->
-            <NuxtLink v-if="isLoggedIn()" to="/auth/profile" flex="~" justify="center" items="center" >
-                <div>
-                    <img src="../public/fluent-emoji_man-beard-medium.png" alt="user image">
-                </div>
-            </NuxtLink>
-                <div flex="~" pl="1em" items="center">
-                    <!-- <div>
-                        <p text="white sm" w="20">user name</p>
-                    </div> -->
-                    <div @click="toggleArrowDown()" cursor="pointer" ref="arrowDownRef" self="center">
-                        <Icon  name="ic-baseline-keyboard-arrow-down" />
+            <div v-if="user" class=" flex justify-between items-center border-2 border-solid border-white rounded-md" ml="2">
+                <NuxtLink v-if="isLoggedIn()" to="/auth/profile" flex="~" justify="center" items="center">
+                    <div class="flex justify-between gap-2">
+                        <img src="../public/fluent-emoji_man-beard-medium.png" alt="user image">
+                        <p class='visited:text-white h-full' self-center text="white sm md:md lg:lg">{{ user.name ? user.name : user.email.slice(0, 8) }}</p>
+                    </div>
+                </NuxtLink>
+                <div flex="~" items="center" >
+                    <div  @click="toggleArrowDown()" cursor="pointer" ref="arrowDownRef" self="center">
                         <Icon class="" text="2xl light" name="ic-baseline-keyboard-arrow-down" />
                     </div>
                 </div>
+            </div>
 
 
             <AuthLogInButton />
@@ -47,11 +46,11 @@
 </template>
 
 <script setup>
+const { isLoggedIn, signOut, user } = useAuth()
 const arrowDownRef = ref(null)
 const sidebarRef = ref(null)
 const route = useRoute()
 const DetailRoute = route.path.includes('/events/detail')
-
 
 
 const navs = ref([
@@ -68,7 +67,7 @@ const toggleArrowDown = () => {
     arrowDownRef.value.classList.toggle('rotate')
 }
 
-const { isLoggedIn, signOut, user } = useAuth()
+console.log(user)
 </script>
 
 <style>

@@ -17,8 +17,7 @@
                                 <input :class="openin ? 'visible' : 'hidden'" w="30 md:40" text="light" bg="dark"
                                     border="0 rounded" mx="1" p="1" />
                                 <!-- <Icon v-if="openin" name="icon-park-solid:correct" text="1.2em" /> -->
-                                <Icon v-if="!openin ? 'name=material-symbols:edit' : 'name=icon-park-solid:correct'"
-                                    @click="openin = !openin" name="material-symbols:edit" />
+                                <Icon v-if="!openin ? 'name=material-symbols:edit' : 'name=icon-park-solid:correct'" @click="openin = !openin" name="material-symbols:edit" />
                             </div>
                             <h2 text="gray-100 sm md:md">الوصف </h2>
                             <div flex="~" text="sm md:md">
@@ -53,7 +52,7 @@
             <h1 text="3xl" px="20">أحداثي</h1>
             <div w="full" mx="auto">
                 <div grid="~ col-1 gap-4 sm:cols-2  md:cols-3 md:gap-5 lg:cols-4 lg:gap-2 gap-y-4" max-w-7xl py="10" items="center" justify="evenly" px="2" mx="auto" >
-                    <EventsAdd  />
+                    <EventsAddEvent  />
                     <ServiceEventCard v-for="event in 11" :key="event" class="event-card"/>
                 </div>
             </div>
