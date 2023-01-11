@@ -38,7 +38,7 @@
         <Icon @click="toggleSidebar()" cursor="pointer" name="ic-baseline-menu" text="light 2xl" justify-self="start" w="1.8em" class="!md:hidden" />
    
          <!--SIDEBAR -->
-        <div ref="sidebarRef" w="full" h="full" class="fixed top-0  bottom-0 right-0 left-0 z-3 block md:hidden hideSideBar" transition="all ease-in-out 0.3s">
+        <div ref="sidebarRef" w="full" h="full" class="fixed top-0  bottom-0 right-0 left-0 z-25 block md:hidden hideSideBar" transition="all ease-in-out 0.3s">
             <Sidebar :toggleSidebar="toggleSidebar" /> 
         </div>
    
@@ -67,7 +67,6 @@ const toggleArrowDown = () => {
     arrowDownRef.value.classList.toggle('rotate')
 }
 
-console.log(user)
 </script>
 
 <style>

@@ -1,5 +1,5 @@
 <template>
-    <div flex="~" text="light 1.5em" items="start">
+    <div flex="~" text="light 1.5em" items="start" px="5 md:0">
         <div flex="~ col gap-8" justify="between" h="72" items="start">
             <div flex="~ col-2 gap-10">
                 <div class="opacity-40 hidden md:block">

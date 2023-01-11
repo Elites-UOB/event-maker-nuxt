@@ -1,6 +1,6 @@
 <template>
     <div w-full flex flex-col justify-between items-center gap="10" h="full">
-        <h1 text="xl" order-2>جاري تحميل الاحداث من اجلك</h1>
+        <h1 text="xl" order-2>جاري تحميل الاحداث</h1>
         <div order-1 class="loading-spinner"></div>
     </div>
 </template>

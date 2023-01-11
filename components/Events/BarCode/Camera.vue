@@ -2,7 +2,8 @@
     <ClientOnly>
         <CostumeContainer w="full" flex="~ col md:row" items="center md:start" justify="center" gap="10" h="fit" dir="ltr" mt="5">
             <CostumeBox v-if="isBrowser" flex="~ col md:row" justify="between" items="center md:between"  gap="20" h="90" rounded="sm" order="2 md:1" w="3/4 md:1/2">
-                <qrcode-stream @init="onInit()" @decode="onDecode()"></qrcode-stream>  {{ decode }}
+                <div class="w-120 h-100 bg-white"></div>
+                <qrcode-stream @init="onInit()" @decode="onDecode()"></qrcode-stream>
             </CostumeBox>
             <p v-else>حدث خطأ في الكاميرا الرجاء رفرش الصفحة</p>
             <CostumeBox color="#676767" ml="10" w="2/7" order="1 md:2" text="md lg:lg" font="black">ماسح البطاقات</CostumeBox>
@@ -11,11 +12,11 @@
 </template>
 
 <script setup>
-import { QrcodeStream } from "vue3-qrcode-reader"
+// import { QrcodeStream } from "vue3-qrcode-reader"
 const Error = ref("")
 const decode = ref("")
 const isBrowser = typeof window !== 'undefined'
-//! THE QR READER CAN'T READS ANY QR CODES BECAUSE IT'S NOT ACTIVATED YET
+//* THE QR READER CAN'T READS ANY QR CODES BECAUSE IT'S NOT ACTIVATED YET
     async function onInit(promise) {
         try {
             const { capabilities } = await promise
@@ -35,8 +36,6 @@ const isBrowser = typeof window !== 'undefined'
                 Error.value = "browser seems to be lacking features"
             }
             console.log(error)
-        } finally {
-            console.log("finally")
         }
     }
 

@@ -15,6 +15,9 @@ useHead({
       content: 'Event Maker',
     },
   ],
+  link: [
+    {rel: 'icon', type: 'image/png', href: '/icon.png'}
+  ]
   
 })
 </script>
